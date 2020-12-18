@@ -56,6 +56,7 @@ public class TuyaSmartApp extends MultiDexApplication {
         return "";
     }
 
+    @SuppressLint("StaticFieldLeak")
     private static Context context;
 
     public static Context getAppContext() {
