@@ -139,9 +139,7 @@
     <string name="ty_offline_title">设备处于离线状态</string>
     <string name="ty_pattern_auto_des">自动开启方可继续添加定时</string>
     <string name="ty_pattern_manual">手动</string>
-    <string name="ty_permission_tip_contact">手机通讯录权限获取失败，请到手机“设置 - 应用 - %1$s -
-        权限”中设置授予%1$s通讯录访问的权限
-    </string>
+    <string name="ty_permission_tip_contact">手机通讯录权限获取失败，请到手机“设置 - 应用 - %1$s -权限”中设置授予%1$s通讯录访问的权限</string>
     <string name="ty_permission_tip_location">- 获取手机位置信息的权限</string>
     <string name="ty_permission_tip_phone_state">- 获取电话设备信息的权限</string>
     <string name="ty_permission_tip_read_set">为保证您正常使用%1$s，需要您授予“读写系统设置项”的权限</string>
@@ -221,11 +219,9 @@
     <string name="connect_to_wifi">连接Wi-Fi</string>
     <string name="connect_to_wifi_failure">连接热点失败，查看是否密码输入正确</string>
     <string name="connect_to_wifi_tip">接通设备电源，选择可用的Wi-Fi网络，智能设备将使用该无线网络上网。</string>
-    <string name="connectedto">Connected to</string>
-    <string name="connecting">Connecting to</string>
-    <string name="connectionError">An error occurred connecting to</string>
-    <string name="content_device_offline">请检查或尝试:\n1.设备连接电源是否正常；\n2.Wi-Fi网络是否正常；\n3.重置设备,重新添加。
-    </string>
+    <string name="connectedto">"已连接至: "</string>
+    <string name="connecting">"正在连接: "</string>
+    <string name="content_device_offline">请检查或尝试:\n1.设备连接电源是否正常；\n2.Wi-Fi网络是否正常；\n3.重置设备,重新添加。</string>
     <string name="control_data_error">DP格式错误</string>
     <string name="control_data_error_code">11001</string>
     <string name="copy_right">©2015 Tuya Inc. All Rights Reserved</string>
@@ -238,8 +234,8 @@
     <string name="device_has_unbinded">设备已移除</string>
     <string name="device_on_off">设备开关</string>
     <string name="device_reset">设备重置</string>
-    <string name="disconnected">Disconnected from</string>
-    <string name="disconnecting">Disconnecting from</string>
+    <string name="disconnected">"已从此处断开: "</string>
+    <string name="disconnecting">"正在从此处断开： "</string>
     <string name="done">完成</string>
     <string name="download_error_with_md5_unrectify">md5验证错误，下载失败</string>
     <string name="download_unzip_error">ui界面包解压缩失败</string>
@@ -269,9 +265,7 @@
     <string name="firmware_upgrade_update">新版更新</string>
     <string name="firmware_upgrading">固件正在升级中，请勿切断设备电源</string>
     <string name="firmware_upgrad_tips0">固件信息。新版本: %1$s,当前版本: %2$s,升级信息: %3$s</string>
-    <string name="firmware_upgrad_tips1">固件信息。新版本: %1$s,当前版本: %2$s,升级信息: %3$s,升级状态: %4$d,升级类型:
-        %5$d
-    </string>
+    <string name="firmware_upgrad_tips1">固件信息。新版本: %1$s,当前版本: %2$s,升级信息: %3$s,升级状态: %4$d,升级类型: %5$d</string>
     <string name="friday">星期五</string>
     <string name="friend">共享设备</string>
     <string name="get_the_latest_ui_version">正在获取最新ui界面</string>
@@ -315,7 +309,7 @@
     <string name="no_device_found">设备不存在</string>
     <string name="no_device_in_this_gw">该网关下没有设备</string>
     <string name="no_share">暂未共享设备给任何人</string>
-    <string name="no_status">Unknown connection status to</string>
+    <string name="no_status">"连接状态未知: "</string>
     <string name="no_timer_data">没有定时数据</string>
     <string name="no_update">无更新</string>
     <string name="once_day">永不</string>
@@ -477,16 +471,13 @@
     <string name="ty_ez_search_failed">没有找到待添加的设备</string>
     <string name="ty_ez_select_all">全选</string>
     <string name="ty_ez_selected_device">共选%d个设备</string>
-    <string name="ty_ez_status_active_android">
-        <![CDATA[<font color="#9b9b9b">激活设备…</font>]]></string>
+    <string name="ty_ez_status_active_android"> <![CDATA[<font color="#9b9b9b">激活设备…</font>]]></string>
     <string name="ty_ez_status_fail_note">添加的%1$d个设备中有%2$d个添加失败</string>
     <string name="ty_ez_status_failed_android">添加失败</string>
-    <string name="ty_ez_status_get_info_android">
-        <![CDATA[<font color="#9b9b9b">获取设备信息…</font>]]></string>
+    <string name="ty_ez_status_get_info_android"><![CDATA[<font color="#9b9b9b">获取设备信息…</font>]]></string>
     <string name="ty_ez_status_share">共享给家人</string>
     <string name="ty_ez_status_success">添加成功</string>
-    <string name="ty_ez_status_success_android">
-        <![CDATA[<font color="#7ed321">添加成功</font>]]></string>
+    <string name="ty_ez_status_success_android"><![CDATA[<font color="#7ed321">添加成功</font>]]></string>
     <string name="ty_ez_wifi_title">设置设备工作Wi-Fi</string>
     <string name="ty_offline_note">1.设备连接电源是否正常；\n2.Wi-Fi网络是否正常；\n3.重置设备,重新添加。</string>
 
@@ -673,5 +664,19 @@
     <string name="login_qr_app_info">扫码登录</string>
     <string name="login_qrlogin_pad_info">需要使用手机 app 扫码</string>
     <string name="login_qrcode">二维码扫码登录</string>
+    <string name="lamp_color_mode">色彩模式</string>
+    <string name="lamp_color_saturation">色彩模式</string>
+    <string name="lamp_color_temper_low">冷色</string>
+    <string name="lamp_color_temper_high">暖色</string>
+    <string name="lamp_color_saturation_max">彩色</string>
+    <string name="lamp_color_saturation_min">平白</string>
+    <string name="lamp_color_light_max">加亮</string>
+    <string name="lamp_color_light_min">减暗</string>
+    <string name="lamp_scene_leisure">放松</string>
+    <string name="lamp_open_tip">点击打开</string>
+    <string name="lamp_close_tip">点击关闭</string>
+    <string name="lamp_open_failure">打开灯失败</string>
+    <string name="lamp_close_failure">关闭灯失败</string>
+    <string name="connectionError">"连接时发生错误: "</string>
 
 </resources>
