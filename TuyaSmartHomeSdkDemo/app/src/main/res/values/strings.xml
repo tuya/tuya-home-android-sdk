@@ -29,9 +29,7 @@
     <string name="click_set_neekname">Tap to set your name</string>
     <string name="contact_use_tip">You sign in with %s account</string>
     <string name="env_preview">(Preview)</string>
-    <string name="env_wrong_tip">The device is online, while App is running under preview
-        environment. Thus not controllable
-    </string>
+    <string name="env_wrong_tip">The device is online, while App is running under preview environment. Thus not controllable</string>
     <string name="ty_loading">Loading…</string>
     <string name="every_week_five">Every Friday</string>
     <string name="every_week_four">Every Thursday</string>
@@ -48,13 +46,11 @@
     <string name="firmware_no_update_one">Version:</string>
     <string name="firmware_no_update_title">Firmware is the latest version</string>
     <string name="firmware_upgrade_dev">Device control module</string>
-    <string name="firmware_upgrade_failure_description">Please restart the device and try again
-    </string>
+    <string name="firmware_upgrade_failure_description">Please restart the device and try again</string>
     <string name="firmware_upgrade_gw">Connection module:</string>
     <string name="firmware_upgrade_now">Upgrade now</string>
     <string name="gesture_password_forget">Forgot pattern password</string>
-    <string name="gesture_password_input_limit">Trying too often, please retry after %d minutes
-    </string>
+    <string name="gesture_password_input_limit">Trying too often, please retry after %d minutes</string>
     <string name="gesture_password_input_new">New pattern password</string>
     <string name="gesture_password_input_original">Enter correct pattern password</string>
     <string name="gesture_password_reset">Whether to reset pattern password?</string>
@@ -62,8 +58,7 @@
     <string name="home_no_device">Empty List</string>
     <string name="input_login_password">Enter login password</string>
     <string name="input_password_again">Enter password again</string>
-    <string name="key_num_not_reasonable">Password length is 6-13 characters, please try again
-    </string>
+    <string name="key_num_not_reasonable">Password length is 6-13 characters, please try again</string>
     <string name="key_num_not_uniform">Password not the same, please try again</string>
     <string name="local_space_no_enough">Local space not enough</string>
     <string name="login_find_password">Request password</string>
@@ -92,9 +87,7 @@
     <string name="ty_add_device_find_dev">Find device</string>
     <string name="ty_add_device_initialize">Initialize device</string>
     <string name="ty_add_device_reg_cloud">Register device to the cloud</string>
-    <string name="ty_app_upgrade_tips">Your app version don\'t support the device, please update to
-        the latest version.
-    </string>
+    <string name="ty_app_upgrade_tips">Your app version don\'t support the device, please update to the latest version.</string>
     <string name="ty_bind_phone_num">Bind phone number first</string>
     <string name="ty_bind_phone_num_now">Bind it now</string>
     <string name="ty_camera_framework_bug">Can\'t open camera</string>
@@ -106,17 +99,13 @@
     <string name="ty_connect_net_modules">Connection module</string>
     <string name="ty_control_panel_factory_reset">Restore manufacture defaults</string>
     <string name="ty_control_panel_factory_reset_fail">Restoring failed, please retry</string>
-    <string name="ty_control_panel_factory_reset_info">Device as well as related data will be
-        removed after restoring manufacture defaults
-    </string>
+    <string name="ty_control_panel_factory_reset_info">Device as well as related data will be removed after restoring manufacture defaults</string>
     <string name="ty_control_panel_factory_reset_succ">Success</string>
     <string name="ty_control_panel_factory_reseting">Restoring, please don\'t turn it off&#046;&#046;&#046;.</string>
     <string name="ty_creat_gesture">Enter pattern password</string>
     <string name="ty_creat_gesture_again">Enter pattern password again</string>
     <string name="ty_creat_gesture_key">Create pattern password</string>
-    <string name="ty_creat_gesture_key_info">Create a pattern password. Other persons can\'t control
-        your deviceList even with your smartphone
-    </string>
+    <string name="ty_creat_gesture_key_info">Create a pattern password. Other persons can\'t control your deviceList even with your smartphone</string>
     <string name="ty_creat_gesture_succ">Successfully create pattern password</string>
     <string name="ty_current_bind_phone_tip">The bound account is:</string>
     <string name="ty_development_tool_pid_fail">Failed to transmit product ID, please retry</string>
@@ -124,9 +113,7 @@
     <string name="ty_device_control_modules">Device control module</string>
     <string name="ty_enter_old_gesture">Please enter old pattern password</string>
     <string name="ty_ez_ap">Still not working, try other ways</string>
-    <string name="ty_ez_toast_different_wifi">Confirm that phone and device are connected to the
-        same Wi-Fi
-    </string>
+    <string name="ty_ez_toast_different_wifi">Confirm that phone and device are connected to the same Wi-Fi</string>
     <string name="ty_ez_try">Please try again</string>
     <string name="ty_gesture_not_correct">Incorrect password, please re-enter</string>
     <string name="ty_gesture_not_correct_times">Error, please reset pattern password</string>
@@ -147,10 +134,8 @@
     <string name="ty_mobile_change_button">Change mobile number</string>
     <string name="ty_mobile_change_phone">Your mobile number</string>
     <string name="ty_mobile_change_tip">Login with mobile number</string>
-    <string name="ty_modify_device_name_length_limit">No more than 25 characters for device name
-    </string>
-    <string name="ty_modify_group_name_length_limit">No more than 25 characters for group name
-    </string>
+    <string name="ty_modify_device_name_length_limit">No more than 25 characters for device name</string>
+    <string name="ty_modify_group_name_length_limit">No more than 25 characters for group name</string>
     <string name="ty_mqtt_connecting">Device is connecting&#046;&#046;&#046;.</string>
     <string name="ty_net_useless_info">Network is unavailable</string>
     <string name="ty_no_net_info">Network error, please check</string>
@@ -160,19 +145,12 @@
     <string name="ty_offline_title">The device is offline</string>
     <string name="ty_pattern_auto_des">Turn on to add new timer</string>
     <string name="ty_pattern_manual">Manual</string>
-    <string name="ty_permission_tip_contact">Failed to obtain contact information, please grant the
-        permission in phone \"Settings-Applications-%1$s-Permissions\"
-    </string>
+    <string name="ty_permission_tip_contact">Failed to obtain contact information, please grant the permission in phone \"Settings-Applications-%1$s-Permissions\"</string>
     <string name="ty_permission_tip_location">- Get permission to location information</string>
     <string name="ty_permission_tip_phone_state">- Get permission to read phone status</string>
-    <string name="ty_permission_tip_read_set">To normally use %1$s, please grant permission to
-        \"read or write system settings\"
-    </string>
-    <string name="ty_permission_tip_tail">Please grant permissions above in phone
-        \"Settings\"-\"Applications\"-%1$s-\"Permission\"
-    </string>
-    <string name="ty_permission_tip_title">To normally use %1s, please grant permissions below:
-    </string>
+    <string name="ty_permission_tip_read_set">To normally use %1$s, please grant permission to \"read or write system settings\"</string>
+    <string name="ty_permission_tip_tail">Please grant permissions above in phone \"Settings\"-\"Applications\"-%1$s-\"Permission\"</string>
+    <string name="ty_permission_tip_title">To normally use %1s, please grant permissions below:</string>
     <string name="ty_permission_tip_write_storage">- Get permission to operate storage</string>
     <string name="ty_phone_num_error">Mobile number error</string>
     <string name="ty_profile_gesture">Pattern unlock</string>
@@ -202,16 +180,12 @@
     <string name="action_more">More</string>
     <string name="action_send">Send</string>
     <string name="action_tips_exit_hint">Tap once more to exit</string>
-    <string name="activity_ap_no_smart_wifi">No Location authorization, or there is no hotspot
-        network.
-    </string>
+    <string name="activity_ap_no_smart_wifi">No Location authorization, or there is no hotspot network.</string>
     <string name="activity_ec_begin_config">Configure</string>
     <string name="activity_title_setting">Settings</string>
     <string name="add_alarm_timer">Add timer</string>
     <string name="add_device_finish_now"><![CDATA[<font color="#626262">Cancel</font>]]></string>
-    <string name="add_device_tip">Choose usable Wi-Fi, and smart device\n will use it to connect to
-        the Internet.
-    </string>
+    <string name="add_device_tip">Choose usable Wi-Fi, and smart device\n will use it to connect to the Internet.</string>
     <string name="add_feedback">New Feedback</string>
     <string name="add_new_friend">Add</string>
     <string name="add_new_user">Add new member</string>
@@ -220,10 +194,8 @@
     <string name="ap_mode">AP Mode</string>
     <string name="bind_device_cancel">No</string>
     <string name="bind_device_confirm">Yes</string>
-    <string name="bind_device_failure">
-        <![CDATA[<font color="#FF5800">Check the possible failure reasons</font>]]></string>
-    <string name="bind_device_success">
-        <![CDATA[<font color="#61BA00">Configure successfully</font>]]></string>
+    <string name="bind_device_failure"><![CDATA[<font color="#FF5800">Check the possible failure reasons</font>]]></string>
+    <string name="bind_device_success"><![CDATA[<font color="#61BA00">Configure successfully</font>]]></string>
     <string name="cancel">Cancel</string>
     <string name="cancel_connect">Remove device</string>
     <string name="cannot_input_empty_string">The input can\'t be empty.</string>
@@ -246,23 +218,15 @@
     <string name="confirm">Confirm</string>
     <string name="connect_phone_to_network">Please make sure your phone connected to Wi-Fi.</string>
     <string name="connect_to_the_hotspot">Connect Hotspot</string>
-    <string name="connect_to_the_hotspot_error">Hotspot connection failed, please check password.
-    </string>
-    <string name="connect_to_the_hotspot_tip">Please connect to the hotspot named %s-XXXX. Please
-        check password in instruction
-    </string>
+    <string name="connect_to_the_hotspot_error">Hotspot connection failed, please check password.</string>
+    <string name="connect_to_the_hotspot_tip">Please connect to the hotspot named %s-XXXX. Please check password in instruction</string>
     <string name="connect_to_wifi">Connect Wi-Fi</string>
-    <string name="connect_to_wifi_failure">Hotspot connection failed, please check password.
-    </string>
-    <string name="connect_to_wifi_tip">Connect power, choose usable Wi-Fi network, and smart device
-        will use it to connect to the Internet.
-    </string>
+    <string name="connect_to_wifi_failure">Hotspot connection failed, please check password.</string>
+    <string name="connect_to_wifi_tip">Connect power, choose usable Wi-Fi network, and smart device will use it to connect to the Internet.</string>
     <string name="connectedto">Connected to</string>
     <string name="connecting">Connecting to</string>
     <string name="connectionError">An error occurred connecting to</string>
-    <string name="content_device_offline">Pleases check or try:\n1. if the device powered on\n2. if
-        Wi-Fi available\n3. Reset the device
-    </string>
+    <string name="content_device_offline">Pleases check or try:\n1. if the device powered on\n2. if Wi-Fi available\n3. Reset the device</string>
     <string name="control_data_error">DP data error</string>
     <string name="control_data_error_code">11001</string>
     <string name="copy_right">©2015 Tuya Inc. All Rights Reserved</string>
@@ -288,9 +252,7 @@
     <string name="feed_back_add_hint">Please describe your issue</string>
     <string name="feed_back_no_content">Empty Feedback List</string>
     <string name="feed_back_submiting">Submit</string>
-    <string name="feedback_default_content">Hey, there. As we\'re growing, your feedback is
-        desperately needed.\nOr any bugs that piss you off, shout it out here :)\n
-    </string>
+    <string name="feedback_default_content">Hey, there. As we\'re growing, your feedback is desperately needed.\nOr any bugs that piss you off, shout it out here :)\n</string>
     <string name="feedback_edit_title">Write your feedback</string>
     <string name="feedback_faq">FAQ</string>
     <string name="feedback_out_of_range">The words number can not exceed 240 characters</string>
@@ -375,9 +337,7 @@
     <string name="rename">Rename</string>
     <string name="rename_device">Modify Device Name</string>
     <string name="repeat">Repeat</string>
-    <string name="reset_device_answer_1">Please reset device\n\n2.Power off device\n\n3.Power on
-        device after 15 seconds
-    </string>
+    <string name="reset_device_answer_1">Please reset device\n\n2.Power off device\n\n3.Power on device after 15 seconds</string>
     <string name="reset_device_question_1">No green light flashes</string>
     <string name="reset_device_question_2">Reset device</string>
     <string name="retry">Retry</string>
@@ -394,9 +354,7 @@
     <string name="setting_shake">Vibrate on Slient</string>
     <string name="setting_voice">Vibrate on Ring</string>
     <string name="setup">Setting</string>
-    <string name="share_input_check_code">Verification code sent to %s who not registered. You need
-        type in the type to finish adding sharing.
-    </string>
+    <string name="share_input_check_code">Verification code sent to %s who not registered. You need type in the type to finish adding sharing.</string>
     <string name="start_use_tuya">Start</string>
     <string name="success">Success</string>
     <string name="sunday">Sunday</string>
@@ -414,8 +372,7 @@
     <string name="update_install_now_hint">Install now</string>
     <string name="update_no_new_version">This is the latest version</string>
     <string name="update_notify_desc">%s Upgrading now, please wait.…</string>
-    <string name="update_notify_install_desc">%s new version downloading finished，tap to install.
-    </string>
+    <string name="update_notify_install_desc">%s new version downloading finished，tap to install.</string>
     <string name="update_notify_title">Upgrade</string>
     <string name="update_ready_download_title">New version found</string>
     <string name="update_ready_install_title">New version download done</string>
@@ -429,18 +386,13 @@
     <string name="wednesday">Wednesday</string>
     <string name="weekday">Working days</string>
     <string name="weekend">Weekend</string>
-    <string name="wep_key_with_digits">WEP key must be 5/13 ASCII characters or 10/26 Hexadigits.
-    </string>
+    <string name="wep_key_with_digits">WEP key must be 5/13 ASCII characters or 10/26 Hexadigits.</string>
     <string name="wifi_add_network_failure">Network connection failed</string>
     <string name="wifi_connect_not_correct">Failed to connect hotspot, please try again.</string>
     <string name="wifi_create_failure">Network configure failed</string>
-    <string name="wpa2_must_with_eghit_characters">WPA2 passphrase length must be minimum 8
-        characters
-    </string>
+    <string name="wpa2_must_with_eghit_characters">WPA2 passphrase length must be minimum 8 characters</string>
     <!-- 共享 -->
-    <string name="wpa_must_with_eghit_characters">WPA passphrase length must be minimum 8
-        characters
-    </string>
+    <string name="wpa_must_with_eghit_characters">WPA passphrase length must be minimum 8 characters</string>
     <string name="new_share">Add Sharing</string>
     <string name="shared_title">My Sharings</string>
     <string name="ty_add_share_nickname">Nickname</string>
@@ -462,22 +414,16 @@
     <string name="ty_share_edit_alias">Remark</string>
     <string name="ty_share_empty_device">No shared device received</string>
     <string name="username_phone_is_null">Please type in name and phone number.</string>
-    <string name="ty_enter_keyword_tip">6-20 characters for password, including character, numbers,
-        symbols
-    </string>
+    <string name="ty_enter_keyword_tip">6-20 characters for password, including character, numbers, symbols</string>
     <string name="ty_share_default_info">Enter mobile number/E-mail</string>
     <!-- EZ配置 -->
     <string name="ty_no_data">No data</string>
     <string name="ez_notSupport_5G">This app is supported only on 2.4GHz Wi-Fi channels</string>
     <string name="ez_notSupport_5G_change">Change</string>
     <string name="ez_notSupport_5G_continue">Continue</string>
-    <string name="ez_notSupport_5G_tip">This app is supported only on 2.4GHz Wi-Fi channels, please
-        retry
-    </string>
+    <string name="ez_notSupport_5G_tip">This app is supported only on 2.4GHz Wi-Fi channels, please retry</string>
     <string name="network_time_out">Network connection error, please check</string>
-    <string name="ty_ap_connect_description">Open phone \"setting-WLAN\" and connect to the Wi-Fi
-        network
-    </string>
+    <string name="ty_ap_connect_description">Open phone \"setting-WLAN\" and connect to the Wi-Fi network</string>
     <string name="ty_ap_connect_go">Connect now</string>
     <string name="ty_ap_connect_help">Not connecting? Refer to help</string>
     <string name="ty_ap_error_description">Connection error, refer to help and retry</string>
@@ -488,9 +434,7 @@
     <string name="ty_ec_find_add_device_title">Add Device</string>
     <string name="ty_ez_add_progress">Progress</string>
 
-    <string name="ty_ez_connecting_device_note2">Keep router, phone and device within\n valid
-        distance
-    </string>
+    <string name="ty_ez_connecting_device_note2">Keep router, phone and device within\n valid distance</string>
     <string name="ty_ez_connecting_device_title">Try to connect device</string>
     <string name="ty_ez_connecting_devicei_note1">Device is connecting</string>
     <string name="ty_ez_current_no_wifi">Phone is not connecting Wi-Fi at present</string>
@@ -498,22 +442,13 @@
     <string name="ty_ez_deselect">Unselect all</string>
     <string name="ty_ez_finding">Discovering device</string>
     <string name="ty_ez_help">View help</string>
-    <string name="ty_ez_index">Please confirm device (or instructor light)\n is quickly flashing
-    </string>
+    <string name="ty_ez_index">Please confirm device (or instructor light)\n is quickly flashing</string>
     <string name="ty_ez_index_help">No quick flashing? Refer to help</string>
     <string name="ty_ez_init_comfirm">Confirm reset, switch to hotspot mode</string>
-    <string name="ty_ez_init_descripton1">Network is unstable, please connect to device hotspot and
-        try again\nReset device first before connection
-    </string>
-    <string name="ty_ez_init_descripton2">Smart lamp: Switch \"on\" and \"off\" 3 times, until it
-        slowly flashes
-    </string>
-    <string name="ty_ez_init_descripton3">Other deviceList: Long press reset button for 5 seconds until
-        instructor light slowly flashes(refer to manual for details)
-    </string>
-    <string name="ty_ez_init_descripton_ap">Reset device as per instructions below, switch to
-        hotspot mode
-    </string>
+    <string name="ty_ez_init_descripton1">Network is unstable, please connect to device hotspot and try again\nReset device first before connection</string>
+    <string name="ty_ez_init_descripton2">Smart lamp: Switch \"on\" and \"off\" 3 times, until it slowly flashes</string>
+    <string name="ty_ez_init_descripton3">Other deviceList: Long press reset button for 5 seconds until instructor light slowly flashes(refer to manual for details)</string>
+    <string name="ty_ez_init_descripton_ap">Reset device as per instructions below, switch to hotspot mode</string>
     <string name="ty_ez_init_help">Refer to help for details</string>
     <string name="ty_ez_init_title">Switch to hotspot mode</string>
     <string name="ty_ez_other_wifi">Use other Wi-Fi</string>
@@ -521,22 +456,17 @@
     <string name="ty_ez_search_failed">No device found to be added</string>
     <string name="ty_ez_select_all">Select all</string>
     <string name="ty_ez_selected_device">%d selected</string>
-    <string name="ty_ez_status_active_android">
-        <![CDATA[<font color="#9b9b9b">Activating device…</font>]]></string>
+    <string name="ty_ez_status_active_android"><![CDATA[<font color="#9b9b9b">Activating device…</font>]]></string>
     <string name="ty_ez_status_fail_note">%2$d device out of %1$d failed to be added</string>
     <string name="ty_ez_status_failed_android">Failed to add</string>
-    <string name="ty_ez_status_get_info_android">
-        <![CDATA[<font color="#9b9b9b">Obtaining device information…</font>]]></string>
+    <string name="ty_ez_status_get_info_android"> <![CDATA[<font color="#9b9b9b">Obtaining device information…</font>]]></string>
     <string name="ty_ez_status_share">Share with family</string>
     <string name="ty_ez_status_success">Add successfully</string>
-    <string name="ty_ez_status_success_android">
-        <![CDATA[<font color="#7ed321">Add successfully</font>]]></string>
+    <string name="ty_ez_status_success_android"> <![CDATA[<font color="#7ed321">Add successfully</font>]]></string>
     <string name="ty_ez_wifi_title">Set up the Wi-Fi for device</string>
 
     <!-- 登录注册 -->
-    <string name="ty_offline_note">1. Whether device is powered on; \n2.Wi-Fi network is
-        normal；\n3.Reset and re-add device
-    </string>
+    <string name="ty_offline_note">1. Whether device is powered on; \n2.Wi-Fi network is normal；\n3.Reset and re-add device</string>
     <string name="code_has_send_to_email">The verification code is sent to your email:</string>
     <string name="code_has_send_to_phone">Verification code is sent to your phone:</string>
     <string name="direct_login">Directly login?</string>
@@ -553,9 +483,7 @@
     <!-- 个人中心 -->
     <string name="user_exists">The user has existed</string>
     <string name="mobile_binding">Bind mobile phone</string>
-    <string name="mobile_binding_notsamecountry">Please enter the number with the same country as
-        yours
-    </string>
+    <string name="mobile_binding_notsamecountry">Please enter the number with the same country as yours</string>
     <string name="upgrade_now">Start Upgrade</string>
     <string name="upgrade_cancel">Cancel Upgrade</string>
     <string name="send_command">Send Dp Command</string>
@@ -604,19 +532,15 @@
     <string name="unit_success">Success</string>
     <string name="unit_failure">Failure</string>
     <string name="please_login">Please Login First</string>
-    <string name="cant_find_alarm_attr">未找到对应的定时属性</string>
+    <string name="cant_find_alarm_attr">Cannot find the alarm</string>
     <string name="get_share_list">Get Share List</string>
     <string name="add_uid_share">Add Uid Share</string>
     <string name="ty_logout_loading">Exiting, please wait&#046;&#046;&#046;</string>
-    <string name="ty_add_device_ap_info">Power on and confirm instructor light slowly flashing
-    </string>
+    <string name="ty_add_device_ap_info">Power on and confirm instructor light slowly flashing</string>
     <string name="ty_add_device_btn_info">Instructor light is on other status</string>
     <string name="ty_add_device_ez_btn_info">Instructor light is quickly flashing</string>
-    <string name="ty_add_device_ez_failure_ap_tip">Unstable network, please confirm instructor light
-        slowly flashing
-    </string>
-    <string name="ty_add_device_ez_info">Power on and confirm instructor light quickly flashing
-    </string>
+    <string name="ty_add_device_ez_failure_ap_tip">Unstable network, please confirm instructor light slowly flashing</string>
+    <string name="ty_add_device_ez_info">Power on and confirm instructor light quickly flashing</string>
     <string name="ty_add_device_guide_info">Tap here to add deviceList</string>
     <string name="format_error">Format Error</string>
     <string name="ty_test_mode">Test Mode</string>
@@ -661,35 +585,32 @@
     <string name="device_network_error">Network Error</string>
 
     <string name="edit_dp_value">Edit Test Value</string>
-    <string name="activity_ec_cancel_config">取消配置</string>
-    <string name="cannot_set_no_cloud_and_no_lan">局域网模式或者云模式必须选择其中之一</string>
-    <string name="device_state">设备状态：</string>
-    <string name="firmware_upgrad_tips0">固件信息。新版本: %1$s,当前版本: %2$s,升级信息: %3$s</string>
+    <string name="activity_ec_cancel_config">Cancel config</string>
+    <string name="cannot_set_no_cloud_and_no_lan">Must select LAN mode or WAN mode</string>
+    <string name="device_state">Device status:</string>
+    <string name="firmware_upgrad_tips0">Firmware information. Newest version: %1$s, Current version: %2$s, Update information: %3$s</string>
+    <string name="firmware_upgrad_tips1">Firmware information. Newest version: %1$s, Current version: %2$s, Update information: %3$s, Upgrade status: %4$d, Upgrade type: %5$d</string>
 
-    <string name="firmware_upgrad_tips1">固件信息。新版本: %1$s,当前版本: %2$s,升级信息: %3$s,升级状态: %4$d,升级类型:
-        %5$d
-    </string>
-
-    <string name="device_name">设备名称</string>
-    <string name="get_history_data">获取历史数据</string>
-    <string name="get_device_status">获取状态</string>
-    <string name="get_all_timer">获取所有定时</string>
-    <string name="get_task_timer">获取任务定时</string>
-    <string name="update_timer">更新定时器</string>
-    <string name="delete_timer">删除定时器</string>
-    <string name="open_close_timer">开关定时器</string>
-    <string name="open_close_timer_task">开关定时任务</string>
-    <string name="get_device_timer_status_null">获取设备定时状态为空</string>
-    <string name="get_device_timer_status_failure">获取设备的定时状态</string>
-    <string name="control_timer_switch_status">控制定时器的开关状态</string>
-    <string name="control_timer_task_switch_status">控制定时任务中所有定时器的开关状态</string>
-    <string name="switch_demo">SwitchDemo</string>
+    <string name="device_name">Device Name</string>
+    <string name="get_history_data">Get history data</string>
+    <string name="get_device_status">Get device status</string>
+    <string name="get_all_timer">Get all timer</string>
+    <string name="get_task_timer">Get task timer</string>
+    <string name="update_timer">Update timer</string>
+    <string name="delete_timer">Delete timer</string>
+    <string name="open_close_timer">Turn on/off timer</string>
+    <string name="open_close_timer_task">Turn on/off timer task</string>
+    <string name="get_device_timer_status_null">Device timer status is not exist</string>
+    <string name="get_device_timer_status_failure">Get device timer status failed</string>
+    <string name="control_timer_switch_status">Control the timer switcher</string>
+    <string name="control_timer_task_switch_status">Control the task timer switcher</string>
+    <string name="switch_demo">Switcher Demo</string>
     <string name="operation_failure">Operation failure</string>
 
 
     <!-- 家庭管理 -->
-    <string name="input_raw_value">please input RAW Type</string>
-    <string name="family_empty_btn_text">add family</string>
+    <string name="input_raw_value">"Please input RAW data: "</string>
+    <string name="family_empty_btn_text">Add family</string>
 
     <!-- 添加家庭 -->
     <string name="family_index_title">Family management</string>
@@ -701,10 +622,10 @@
     <!-- 家庭信息 -->
     <string name="family_add_room_check_tip">please choose room</string>
     <string name="family_info_title">Family Info</string>
-    <string name="family_info_member_head_txt">family member</string>
-    <string name="family_info_member_admin_txt">admin</string>
-    <string name="family_info_member_normal_txt">ordinary member</string>
-    <string name="family_info_remove_txt">remove the family</string>
+    <string name="family_info_member_head_txt">Family member</string>
+    <string name="family_info_member_admin_txt">Administrator</string>
+    <string name="family_info_member_normal_txt">Ordinary member</string>
+    <string name="family_info_remove_txt">Remove the family</string>
 
     <string name="family_info_remove_currenthome_tip">can not remove current home</string>
 
