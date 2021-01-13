@@ -744,4 +744,5 @@
     <string name="login_qrlogin_pad_info">Need to log in with your phone</string>
     <string name="login_qrcode" >QR Code Login</string>
 
+    <string name="ty_set_read_external_permission">Touch Settings > App Permission and enable the read permission.</string>
 </resources>

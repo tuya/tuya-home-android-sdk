@@ -3,7 +3,6 @@ package com.tuya.smart.android.demo.device.common;
 import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -12,18 +11,22 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
+
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.tuya.smart.android.common.utils.L;
 import com.tuya.smart.android.demo.R;
 import com.tuya.smart.android.demo.base.bean.AlertPickBean;
 import com.tuya.smart.android.demo.base.utils.DialogUtil;
 import com.tuya.smart.android.demo.base.utils.SchemaMapper;
 import com.tuya.smart.android.demo.base.widget.AlertPickDialog;
 import com.tuya.smart.android.demo.device.DpLogBean;
-import com.tuya.smart.android.demo.base.utils.ActivityUtils;
 import com.tuya.smart.android.demo.base.utils.ProgressUtil;
 import com.tuya.smart.android.demo.base.utils.ToastUtil;
 import com.tuya.smart.android.demo.device.ICommonDeviceDebugView;
+import com.tuya.smart.android.demo.device.cloudalbum.CloudAlbumDeviceInteraction;
+import com.tuya.smart.android.demo.device.cloudalbum.IAlbumDeviceApi;
 import com.tuya.smart.android.device.bean.EnumSchemaBean;
 import com.tuya.smart.android.device.bean.SchemaBean;
 import com.tuya.smart.android.device.enums.ModeEnum;
@@ -58,12 +61,32 @@ public class CommonDeviceDebugPresenter extends BasePresenter implements IDevLis
     private DeviceBean mDevBean;
     private ITuyaDevice mTuyaDevice;
     private LogCountDownLatch mDownLatch;
+    @Nullable
+    private IAlbumDeviceApi mAlbumDevice;
+
 
     public CommonDeviceDebugPresenter(Context context, ICommonDeviceDebugView view) {
         mContext = context;
         mView = view;
         initData();
         initListener();
+        initAlbumDevice();
+    }
+
+    private void initAlbumDevice() {
+        if (mDevBean.getCategoryCode().equals("yxk_0007")) {
+            mAlbumDevice = new CloudAlbumDeviceInteraction((Activity) mContext, mDevBean);
+        } else {
+            L.w(TAG, "Not Album Device.");
+        }
+    }
+
+    public boolean isCloudAlbumDevice() {
+        return mAlbumDevice != null;
+    }
+
+    public IAlbumDeviceApi getAlbumDeviceApi() {
+        return mAlbumDevice;
     }
 
     private void initListener() {
@@ -148,10 +171,10 @@ public class CommonDeviceDebugPresenter extends BasePresenter implements IDevLis
     private void sendCommand(String dpId, Object value) {
         HashMap<String, Object> stringObjectHashMap = new HashMap<>();
         stringObjectHashMap.put(dpId, value);
-//        if (!DevUtil.checkSendCommond(mDevId, stringObjectHashMap)) {
-//            ToastUtil.showToast(mContext, "数据格式非法");
-//            return;
-//        }
+        //        if (!DevUtil.checkSendCommond(mDevId, stringObjectHashMap)) {
+        //            ToastUtil.showToast(mContext, "数据格式非法");
+        //            return;
+        //        }
         if (mDownLatch != null) return;
         mDownLatch = new LogCountDownLatch(1);
         String commandStr = JSON.toJSONString(stringObjectHashMap);
@@ -168,7 +191,7 @@ public class CommonDeviceDebugPresenter extends BasePresenter implements IDevLis
 
             @Override
             public void onSuccess() {
-                Log.i("CommonDeviceDebugPresenter","onSuccess");
+                Log.i("CommonDeviceDebugPresenter", "onSuccess");
             }
         });
 
@@ -271,7 +294,6 @@ public class CommonDeviceDebugPresenter extends BasePresenter implements IDevLis
         }
         return jsonObject;
     }
-
 
 
     public static class LogCountDownLatch extends CountDownLatch {
@@ -460,8 +482,10 @@ public class CommonDeviceDebugPresenter extends BasePresenter implements IDevLis
         if (mDownLatch != null) {
             mDownLatch.countDown();
         }
-//        mDownLatch = null;
+        //        mDownLatch = null;
         if (mTuyaDevice != null) mTuyaDevice.onDestroy();
-
+        if (mAlbumDevice != null) {
+            mAlbumDevice.onDestroy();
+        }
     }
 }

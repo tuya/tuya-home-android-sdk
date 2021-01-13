@@ -674,4 +674,5 @@
     <string name="login_qrlogin_pad_info">需要使用手机 app 扫码</string>
     <string name="login_qrcode">二维码扫码登录</string>
 
+    <string name="ty_set_read_external_permission">请到系统设置-应用权限里面下开启读取权限</string>
 </resources>

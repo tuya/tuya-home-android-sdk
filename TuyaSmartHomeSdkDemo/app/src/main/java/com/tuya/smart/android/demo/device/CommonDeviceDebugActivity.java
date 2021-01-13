@@ -1,10 +1,15 @@
 package com.tuya.smart.android.demo.device;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Handler;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.app.ActivityCompat;
+
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 import android.text.TextUtils;
@@ -12,6 +17,8 @@ import android.text.style.ForegroundColorSpan;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.ViewStub;
 import android.widget.CompoundButton;
 import android.widget.ListView;
 import android.widget.ScrollView;
@@ -22,10 +29,12 @@ import com.tuya.smart.android.common.utils.TuyaUtil;
 import com.tuya.smart.android.demo.R;
 import com.tuya.smart.android.demo.base.activity.BaseActivity;
 import com.tuya.smart.android.demo.base.utils.DialogUtil;
+import com.tuya.smart.android.demo.device.cloudalbum.IAlbumDeviceApi;
 import com.tuya.smart.android.demo.device.common.CommonDeviceDebugPresenter;
 import com.tuya.smart.android.device.bean.SchemaBean;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 import butterknife.BindView;
@@ -37,7 +46,7 @@ import butterknife.Unbinder;
  * Created by letian on 16/8/26.
  */
 public class CommonDeviceDebugActivity extends BaseActivity implements ICommonDeviceDebugView {
-
+    private static final String TAG = "CommonDeviceDebugActivity";
     private CommonDebugDeviceAdapter mCommonDebugDeviceAdapter;
     @BindView(R.id.lv_dp_list)
     public ListView mDpListView;
@@ -66,6 +75,21 @@ public class CommonDeviceDebugActivity extends BaseActivity implements ICommonDe
         initPresenter();
         initTitle();
         initAdapter();
+        initCustom();
+    }
+
+    private void initCustom() {
+        if (mPresenter.isCloudAlbumDevice()) {
+            ViewStub stub = findViewById(R.id.custom_operator);
+            View inflated = stub.inflate();
+            IAlbumDeviceApi albumDevice;
+            if (inflated instanceof ViewGroup && (albumDevice = mPresenter.getAlbumDeviceApi()) != null) {
+                List<View> views = albumDevice.getUploadIndicatorViews(this);
+                for (View view : views) {
+                    ((ViewGroup) inflated).addView(view);
+                }
+            }
+        }
     }
 
     private void initPresenter() {
@@ -162,10 +186,10 @@ public class CommonDeviceDebugActivity extends BaseActivity implements ICommonDe
                         int sy = testScroll.getScrollY();
                         int sh = testScroll.getHeight();
                         int delta = bottom - (sy + sh);
-//                        scrollView.smoothScrollTo(0, bottom);
+                        //                        scrollView.smoothScrollTo(0, bottom);
 
                         testScroll.fullScroll(ScrollView.FOCUS_DOWN);
-//                        ObjectAnimator.ofInt(testScroll, "scrollY", delta, bottom).setDuration(500).start();
+                        //                        ObjectAnimator.ofInt(testScroll, "scrollY", delta, bottom).setDuration(500).start();
 
                     }
                 }, 100);
@@ -300,5 +324,24 @@ public class CommonDeviceDebugActivity extends BaseActivity implements ICommonDe
         super.onDestroy();
         mBind.unbind();
         mPresenter.onDestroy();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        IAlbumDeviceApi albumDevice = mPresenter.getAlbumDeviceApi();
+        if (albumDevice instanceof ActivityCompat.PermissionCompatDelegate) {
+            ((ActivityCompat.PermissionCompatDelegate) albumDevice).onActivityResult(this, requestCode, resultCode, data);
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        IAlbumDeviceApi albumDevice = mPresenter.getAlbumDeviceApi();
+        if (albumDevice instanceof ActivityCompat.OnRequestPermissionsResultCallback) {
+            ((ActivityCompat.OnRequestPermissionsResultCallback) albumDevice).onRequestPermissionsResult(requestCode
+                    , permissions, grantResults);
+        }
     }
 }

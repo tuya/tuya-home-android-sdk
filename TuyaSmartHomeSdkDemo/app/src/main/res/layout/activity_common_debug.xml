@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/background_home"
-                android:orientation="vertical">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_home"
+    android:orientation="vertical">
 
     <include
         android:id="@+id/action_bar_layout"
-        layout="@layout/toolbar_top_view"/>
+        layout="@layout/toolbar_top_view" />
 
     <RelativeLayout
         android:id="@+id/rl_dp_operation"
@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_above="@+id/ll_log"
-            android:layout_alignParentTop="true"/>
+            android:layout_alignParentTop="true" />
 
         <LinearLayout
             android:id="@+id/ll_log"
@@ -31,6 +31,13 @@
             android:layout_marginTop="@dimen/mg_22"
             android:background="@color/white"
             android:orientation="vertical">
+
+            <ViewStub
+                android:id="@+id/custom_operator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout="@layout/activity_common_debug_custom_layout"
+                android:minHeight="50dp" />
 
             <FrameLayout
                 android:id="@+id/fl_opertion"
@@ -46,7 +53,7 @@
                     android:layout_marginTop="@dimen/mg_15"
                     android:text="操作日志"
                     android:textColor="@color/color_303030"
-                    android:textSize="@dimen/ts_14"/>
+                    android:textSize="@dimen/ts_14" />
 
                 <TextView
                     android:layout_width="54dp"
@@ -56,7 +63,7 @@
                     android:background="@drawable/bg_btn_code"
                     android:gravity="center"
                     android:text="CODE"
-                    android:textColor="@color/white"/>
+                    android:textColor="@color/white" />
 
                 <TextView
                     android:id="@+id/tv_clear"
@@ -69,7 +76,7 @@
                     android:text="CLEAR"
                     android:textColor="@color/color_ff5800"
 
-                />
+                    />
             </FrameLayout>
 
             <ScrollView
@@ -86,26 +93,29 @@
                     android:layout_marginLeft="@dimen/mg_15"
                     android:background="@null"
                     android:lineSpacingExtra="@dimen/mg_4"
-                    android:textSize="@dimen/ts_12"/>
+                    android:textSize="@dimen/ts_12" />
             </ScrollView>
 
         </LinearLayout>
 
     </RelativeLayout>
-    <FrameLayout android:id="@+id/v_off_line"
-                 android:layout_width="match_parent"
-                 android:layout_height="match_parent"
-                 android:layout_below="@+id/action_bar_layout"
-                 android:background="#30000000"
-                 android:clickable="false"
-                 android:visibility="gone">
-        <TextView android:id="@+id/network_tip"
-                  android:layout_width="match_parent"
-                  android:layout_height="@dimen/mg_32"
-                  android:background="#FEE7B5"
-                  android:gravity="center"
-                  android:textColor="@color/color_626262"
-                  android:textSize="@dimen/ts_14"
-        />
+
+    <FrameLayout
+        android:id="@+id/v_off_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/action_bar_layout"
+        android:background="#30000000"
+        android:clickable="false"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/network_tip"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mg_32"
+            android:background="#FEE7B5"
+            android:gravity="center"
+            android:textColor="@color/color_626262"
+            android:textSize="@dimen/ts_14" />
     </FrameLayout>
 </RelativeLayout>

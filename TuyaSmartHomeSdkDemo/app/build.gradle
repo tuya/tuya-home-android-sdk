@@ -53,51 +53,64 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-    dependencies {
-        implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
-        //***** required ****//
-        implementation 'com.alibaba:fastjson:1.1.67.android'
-        implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.14.9'
-
-        // latest release version
-        implementation 'com.tuya.smart:tuyasmart:3.22.0'
-
-        implementation 'com.tuya.smart:tuyasmart-shortcutparser:0.0.1'
-        implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
-        //***** required ****//
-
-        //***** not required ****//
-        implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
-        implementation 'androidx.appcompat:appcompat:1.2.0'
-        implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
-        implementation 'org.greenrobot:eventbus:3.0.0'
-        implementation 'com.wnafee:vector-compat:1.0.5'
-        implementation 'com.jakewharton:butterknife:10.0.0'
-        annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
-        implementation 'com.kyleduo.switchbutton:library:1.4.2'
-        implementation "androidx.recyclerview:recyclerview:1.1.0"
-        implementation 'com.squareup.picasso:picasso:2.5.2'
-        implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
-
-        //ipc sdk
-        implementation 'com.tuya.smart:tuyasmart-ipc-sdk:3.22.0-open'
-        implementation 'com.tuya.smart:tuyasmart-base-utils:3.18.0r143-rc.9'
-        //option:
-        //camera msg center
-        implementation 'com.tuya.smart:tuyasmart-ipc-camera-message:3.13.0r128'
-        //device control
-        implementation 'com.tuya.smart:tuyasmart-ipc-devicecontrol:3.17.0r139'
-        //encrypted image
-        implementation 'com.tuya.smart:tuyasmart-ipc-camera-sdk-ext:3.22.0-open'
-        implementation 'com.tuya.smart:tuyasmart-imagepipeline-okhttp3:0.0.1'
-        implementation 'com.facebook.fresco:fresco:2.2.0'
-        //timeline view
-        implementation 'com.tuya.smart:tuyasmart-ipc-camera-timeline:1.0.0'
-
-        // For QRCode Login
-        implementation 'com.google.zxing:core:3.3.3'
-
-        //***** not required ****//
-        implementation 'androidx.multidex:multidex:2.0.1'
+    configurations.all {
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
+        // check for updates every build
+        resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
     }
 }
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+    //***** required ****//
+    implementation 'com.alibaba:fastjson:1.1.67.android'
+    implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.14.9'
+
+    // latest release version
+    implementation 'com.tuya.smart:tuyasmart:3.22.0'
+
+    implementation 'com.tuya.smart:tuyasmart-shortcutparser:0.0.1'
+    implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
+    //***** required ****//
+
+    //***** not required ****//
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'org.greenrobot:eventbus:3.0.0'
+    implementation 'com.wnafee:vector-compat:1.0.5'
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+    implementation 'com.kyleduo.switchbutton:library:1.4.2'
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+
+    //ipc sdk
+    implementation 'com.tuya.smart:tuyasmart-ipc-sdk:3.22.0-open'
+    implementation 'com.tuya.smart:tuyasmart-base-utils:3.18.0r143-rc.9'
+    //option:
+    //camera msg center
+    implementation 'com.tuya.smart:tuyasmart-ipc-camera-message:3.13.0r128'
+    //device control
+    implementation 'com.tuya.smart:tuyasmart-ipc-devicecontrol:3.17.0r139'
+    //encrypted image
+    implementation 'com.tuya.smart:tuyasmart-ipc-camera-sdk-ext:3.22.0-open'
+    implementation 'com.tuya.smart:tuyasmart-imagepipeline-okhttp3:0.0.1'
+    implementation 'com.facebook.fresco:fresco:2.2.0'
+    //timeline view
+    implementation 'com.tuya.smart:tuyasmart-ipc-camera-timeline:1.0.0'
+
+    // For QRCode Login
+    implementation 'com.google.zxing:core:3.3.3'
+
+    //***** not required ****//
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation ("com.tuya.smart:tuyasmart-asynclib:3.19.0-rc.2"){
+        exclude group:'com.tuya.smart', module: 'customlint'
+    }
+}
+
