@@ -9,6 +9,7 @@ var interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_manager =
     [ "getDeviceAllDps", "interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_manager.html#a930782afe41e4be9ebf67d2b0c873781", null ],
     [ "isBleLocalOnline", "interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_manager.html#a7c459f1ea9555a37597641345a9f244c", null ],
     [ "notifyNoneForScan", "interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_manager.html#aed93accaa351f676923f0058ce541acb", null ],
+    [ "orderLocalCommunicationList", "interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_manager.html#a19d354f3109627c7493249b2d08997d9", null ],
     [ "postDataChannel", "interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_manager.html#a8d8e5407f9d6696008a9e86b6c61e82c", null ],
     [ "postDataChannel", "interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_manager.html#a3799164d0e0c9de9644d595847297cd2", null ],
     [ "publishDps", "interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_manager.html#a80a6477980a7f6be60507f9ad19346ae", null ],
@@ -26,5 +27,6 @@ var interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_manager =
     [ "stopBleConfig", "interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_manager.html#aa1c71f844385f1e9a4484cdd68c46a74", null ],
     [ "unregisterBusinessLog", "interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_manager.html#a77c10be7bee2adbc971afb713d09eef2", null ],
     [ "unregisterDevcieConnectStatus", "interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_manager.html#a5a10b15876315a5e99e2b0a3c46a7fba", null ],
-    [ "unregisterTransferListener", "interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_manager.html#a278c5f487e036fac3c1e20f40e6fe930", null ]
+    [ "unregisterTransferListener", "interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_manager.html#a278c5f487e036fac3c1e20f40e6fe930", null ],
+    [ "uploadCacheDataToServer", "interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_manager.html#aa86f1b95103dbe7345e1ff1b3fe59e20", null ]
 ];

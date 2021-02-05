@@ -1,14 +1,4 @@
 var searchData=
 [
-  ['tid_1774',['tId',['../classcom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1wifibackup_1_1api_1_1bean_1_1_base_info.html#a27e3e08358edc8677b58acbd63eb6847',1,'com::tuya::smart::sdk::api::wifibackup::api::bean::BaseInfo']]],
-  ['time_1775',['time',['../classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_device_bean.html#a33820127099af7330d8e4ed67d2c45ec',1,'com::tuya::smart::sdk::bean::DeviceBean']]],
-  ['tydevicepublishmodeauto_1776',['TYDevicePublishModeAuto',['../enumcom_1_1tuya_1_1smart_1_1sdk_1_1enums_1_1_t_y_device_publish_mode_enum.html#ac9b36fadccc4d7367d115de235186ba1',1,'com::tuya::smart::sdk::enums::TYDevicePublishModeEnum']]],
-  ['tydevicepublishmodehttp_1777',['TYDevicePublishModeHttp',['../enumcom_1_1tuya_1_1smart_1_1sdk_1_1enums_1_1_t_y_device_publish_mode_enum.html#ab5cce63158885c87c02902ed057e7588',1,'com::tuya::smart::sdk::enums::TYDevicePublishModeEnum']]],
-  ['tydevicepublishmodeinternet_1778',['TYDevicePublishModeInternet',['../enumcom_1_1tuya_1_1smart_1_1sdk_1_1enums_1_1_t_y_device_publish_mode_enum.html#a5d15834ceb6396129fb3fbc65c4ebe3b',1,'com::tuya::smart::sdk::enums::TYDevicePublishModeEnum']]],
-  ['tydevicepublishmodelocal_1779',['TYDevicePublishModeLocal',['../enumcom_1_1tuya_1_1smart_1_1sdk_1_1enums_1_1_t_y_device_publish_mode_enum.html#abaacdd485ac588ba4e4a0876343b6af4',1,'com::tuya::smart::sdk::enums::TYDevicePublishModeEnum']]],
-  ['tydevicepublishmodemqtt_1780',['TYDevicePublishModeMqtt',['../enumcom_1_1tuya_1_1smart_1_1sdk_1_1enums_1_1_t_y_device_publish_mode_enum.html#abbcc99f061616aa29abebfcc661d25aa',1,'com::tuya::smart::sdk::enums::TYDevicePublishModeEnum']]],
-  ['type_1781',['type',['../classcom_1_1tuya_1_1smart_1_1android_1_1device_1_1bean_1_1_bitmap_schema_bean.html#a8bde6e716c835abb164ff5e8934c6eb4',1,'com.tuya.smart.android.device.bean.BitmapSchemaBean.type()'],['../classcom_1_1tuya_1_1smart_1_1android_1_1device_1_1bean_1_1_enum_schema_bean.html#a88ad0db43a030a837cda525af4e8949c',1,'com.tuya.smart.android.device.bean.EnumSchemaBean.type()'],['../classcom_1_1tuya_1_1smart_1_1android_1_1device_1_1bean_1_1_schema_bean.html#ad52e359d41262ba505c0040fa32bf6b8',1,'com.tuya.smart.android.device.bean.SchemaBean.type()'],['../classcom_1_1tuya_1_1smart_1_1android_1_1device_1_1bean_1_1_string_schema_bean.html#ad063b2bdb71abb6437ebbe52231bd069',1,'com.tuya.smart.android.device.bean.StringSchemaBean.type()']]],
-  ['type_5fble_5fmesh_1782',['TYPE_BLE_MESH',['../classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean.html#a897c265b95227235b3bc189802af6ee4',1,'com::tuya::smart::sdk::bean::GroupBean']]],
-  ['type_5fwifi_1783',['TYPE_WIFI',['../classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean.html#a71bd69aad344f7006b05aaf642a88ea9',1,'com::tuya::smart::sdk::bean::GroupBean']]],
-  ['type_5fzigbee_1784',['TYPE_ZIGBEE',['../classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean.html#aa525941e695883f8d9c5091fde5d003a',1,'com::tuya::smart::sdk::bean::GroupBean']]]
+  ['quickopdps_5042',['quickOpDps',['../classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_device_bean.html#aeb0a387729d74256db956e873e5093bc',1,'com::tuya::smart::sdk::bean::DeviceBean']]]
 ];

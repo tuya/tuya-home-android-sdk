@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=9"/>
 		<meta name="generator" content="Doxygen 1.8.20"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<title>Android SDK: Deprecated List</title>
+		<title>Tuya Android Home SDK API Doc: Deprecated List</title>
 		<link href="tabs.css" rel="stylesheet" type="text/css"/>
 		<script type="text/javascript" src="jquery.js"></script>
 		<script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
 					<tr style="height: 42px;">
 						<td id="projectlogo"><img alt="Logo" src="tuya.png"/></td>
 						<td id="projectalign" style="padding-left: 0.5em;">
-							<p id="projectname">Android SDK
+							<p id="projectname">Tuya Android Home SDK API Doc
 							</p>
 						</td>
 					</tr>
@@ -91,8 +91,16 @@ $(document).ready(function(){initNavTree('deprecated.html',''); initResizable();
 <dd><a class="anchor" id="_deprecated000001"></a>Use <a class="el" href="">createZigbeeGroup(String, String, String, ITuyaResultCallback)</a> instead of it.  </dd>
 <dt>Member <a class="el" href="interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1api_1_1_i_tuya_home.html#aa2c2d2aba340b532b7bed90cec157c80">com.tuya.smart.home.sdk.api.ITuyaHome.queryRoomInfoByGroup</a>  (List&lt; GroupBean &gt; groupList)</dt>
 <dd><a class="anchor" id="_deprecated000002"></a>  </dd>
+<dt>Member <a class="el" href="interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1api_1_1_i_tuya_home_scene_manager.html#a9d582e89ef137833ced9e1eac173eabe">com.tuya.smart.home.sdk.api.ITuyaHomeSceneManager.getConditionList</a>  (boolean showFahrenheit, ITuyaResultCallback&lt; List&lt; ConditionListBean &gt;&gt; callback)</dt>
+<dd><a class="anchor" id="_deprecated000003"></a>no longer supported  </dd>
+<dt>Class <a class="el" href="interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_smart_update_listener.html">com.tuya.smart.sdk.api.ISmartUpdateListener</a>  </dt>
+<dd><a class="anchor" id="_deprecated000004"></a>no longer supported  </dd>
 <dt>Member <a class="el" href="interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_zigbee_group.html#ab11ae7f573416fee1d28e3c2693279ec">com.tuya.smart.sdk.api.ITuyaZigbeeGroup.sendCommand</a>  (String devId, List&lt; String &gt; devIds, String gid, int actionId, final ITuyaResultCallback&lt; ZigbeeGroupCreateResultBean &gt; callback)</dt>
-<dd><a class="anchor" id="_deprecated000003"></a>Use addDeviceToGroup or delDeviceToGroup.</dd>
+<dd><a class="anchor" id="_deprecated000005"></a>Use addDeviceToGroup or delDeviceToGroup. </dd>
+<dt>Member <a class="el" href="interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#a00be2374440807a1a97ebb053c80164d">com.tuya.smart.sdk.api.ITuyaUser.registerAccountWithEmail</a>  (final String countryCode, final String email, final String passwd, final IRegisterCallback callback)</dt>
+<dd><a class="anchor" id="_deprecated000006"></a>replace by <a class="el" href="interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#ad54696f5b2dab9b40f439ed1e99dc630">registerAccountWithEmail(String, String, String, String, IRegisterCallback)</a>  </dd>
+<dt>Member <a class="el" href="interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#a817b8257fd5306ffdc3fada0d33a8fd5">com.tuya.smart.sdk.api.ITuyaUser.reRickName</a>  (String name, final IReNickNameCallback callback)</dt>
+<dd><a class="anchor" id="_deprecated000007"></a>replaced by <a class="el" href="interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#a9b9c834044e6802b5851e57641d8b429">updateNickName(String, IReNickNameCallback)</a> </dd>
 </dl>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
