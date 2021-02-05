@@ -15,12 +15,12 @@
 
 ## 文档
 
-更多开发文档请参考：[涂鸦智能Android SDK](https://tuyainc.github.io/tuyasmart_home_android_sdk_doc/zh-hans/)
+更多开发文档请参考：[涂鸦智能Android SDK](https://developer.tuya.com/cn/docs/app-development/android-app-sdk/featureoverview?id=Ka69nt97vtsfu)
 
 ## 最新版本
 
 稳定版本：
 
-* 3.22.0
+* 3.24.0
 
 
