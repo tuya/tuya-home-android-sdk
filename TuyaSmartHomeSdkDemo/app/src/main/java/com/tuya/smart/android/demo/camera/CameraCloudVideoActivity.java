@@ -8,8 +8,11 @@ import android.widget.ProgressBar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.tuya.smart.android.camera.sdk.TuyaIPCSdk;
+import com.tuya.smart.android.camera.sdk.api.ITuyaIPCCore;
 import com.tuya.smart.android.demo.R;
 import com.tuya.smart.android.demo.base.utils.MessageUtil;
+import com.tuya.smart.camera.camerasdk.typlayer.callback.AbsP2pCameraListener;
 import com.tuya.smart.camera.camerasdk.typlayer.callback.IRegistorIOTCListener;
 import com.tuya.smart.camera.camerasdk.typlayer.callback.OperationCallBack;
 import com.tuya.smart.camera.camerasdk.typlayer.callback.OperationDelegateCallBack;
@@ -73,21 +76,36 @@ public class CameraCloudVideoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera_cloud_video);
-        initview();
         initData();
+        initview();
         initCloudCamera();
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (mcloudCamera != null) {
+            mcloudCamera.removeOnDelegateP2PCameraListener();
+        }
     }
 
     private void initData() {
         playUrl = getIntent().getStringExtra("playUrl");
         encryptKey = getIntent().getStringExtra("encryptKey");
         playDuration = getIntent().getIntExtra("playDuration", 0);
+        mDevId = getIntent().getStringExtra("devId");
         cachePath = getApplication().getCacheDir().getPath();
 
     }
 
     private void initCloudCamera() {
         mcloudCamera = new TYCloudVideoPlayer();
+        mcloudCamera.registerP2PCameraListener(new AbsP2pCameraListener() {
+            @Override
+            public void receiveFrameDataForMediaCodec(int i, byte[] bytes, int i1, int i2, byte[] bytes1, boolean b, int i3) {
+                super.receiveFrameDataForMediaCodec(i, bytes, i1, i2, bytes1, b, i3);
+            }
+        });
         mcloudCamera.generateCloudCameraView((IRegistorIOTCListener) mCameraView.createdView());
         mcloudCamera.createCloudDevice(cachePath, mDevId, new OperationDelegateCallBack() {
             @Override
@@ -106,7 +124,12 @@ public class CameraCloudVideoActivity extends AppCompatActivity {
     private void initview() {
         mProgressBar = findViewById(R.id.camera_cloud_video_progressbar);
         mCameraView = findViewById(R.id.camera_cloud_video_view);
-        mCameraView.createVideoView(2);
+        int p2PType = -1;
+        ITuyaIPCCore cameraInstance = TuyaIPCSdk.getCameraInstance();
+        if (cameraInstance != null) {
+            p2PType = cameraInstance.getP2PType(mDevId);
+        }
+        mCameraView.createVideoView(p2PType);
     }
 
 }

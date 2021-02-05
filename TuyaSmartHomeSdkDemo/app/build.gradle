@@ -80,21 +80,15 @@ android {
         implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
 
         //ipc sdk
-        implementation 'com.tuya.smart:tuyasmart-ipc-camera-middleware:3.20.0'
-        implementation 'com.tuya.smart:tuyasmart-ipc-camera-v2:3.20.0'
-        implementation 'com.tuya.smart:tuyasmart-ipc-camera-utils:3.20.0'
-        implementation 'com.tuya.smart:tuyasmart-ipc-camera-diff-api:3.20.0'
-        implementation 'com.tuya.smart:tuyasmart-ipc-camera-outside:3.20.0'
+        implementation 'com.tuya.smart:tuyasmart-ipc-sdk:3.22.0-open'
         implementation 'com.tuya.smart:tuyasmart-base-utils:3.18.0r143-rc.9'
-        //rxjava
-        implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
-        implementation 'io.reactivex.rxjava2:rxjava:2.2.9'
         //option:
         //camera msg center
         implementation 'com.tuya.smart:tuyasmart-ipc-camera-message:3.13.0r128'
         //device control
         implementation 'com.tuya.smart:tuyasmart-ipc-devicecontrol:3.17.0r139'
         //encrypted image
+        implementation 'com.tuya.smart:tuyasmart-ipc-camera-sdk-ext:3.22.0-open'
         implementation 'com.tuya.smart:tuyasmart-imagepipeline-okhttp3:0.0.1'
         implementation 'com.facebook.fresco:fresco:2.2.0'
         //timeline view
