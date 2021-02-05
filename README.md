@@ -21,7 +21,7 @@ The SDK includes the following features:
 
 ## Doc
 
-Refer to details: [Tuya Smart Doc - Android SDK](https://tuyainc.github.io/tuyasmart_home_android_sdk_doc/en/)
+Refer to details: [Tuya Smart Doc - Android SDK](https://developer.tuya.com/en/docs/app-development/android-app-sdk/featureoverview?id=Ka69nt97vtsfu)
 
 ## Latest version
 
@@ -31,7 +31,7 @@ Beta version:
 
 Release version: 
 
-* 3.22.0
+* 3.24.0
 
 
 
