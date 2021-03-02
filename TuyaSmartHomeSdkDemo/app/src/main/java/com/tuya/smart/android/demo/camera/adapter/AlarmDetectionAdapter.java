@@ -1,10 +1,14 @@
 package com.tuya.smart.android.demo.camera.adapter;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.net.Uri;
+import android.os.Environment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
@@ -12,9 +16,15 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.drawee.interfaces.DraweeController;
 import com.tuya.drawee.view.DecryptImageView;
+import com.tuya.smart.android.camera.sdk.TuyaIPCSdk;
+import com.tuya.smart.android.camera.sdk.api.ITuyaIPCTool;
 import com.tuya.smart.android.demo.R;
+import com.tuya.smart.android.demo.base.utils.ToastUtil;
+import com.tuya.smart.camera.utils.BitmapUtils;
+import com.tuya.smart.home.sdk.callback.ITuyaResultCallback;
 import com.tuya.smart.ipc.messagecenter.bean.CameraMessageBean;
 
+import java.io.File;
 import java.util.List;
 
 /**
@@ -26,8 +36,10 @@ public class AlarmDetectionAdapter extends RecyclerView.Adapter<AlarmDetectionAd
     private LayoutInflater mInflater;
     private List<CameraMessageBean> cameraMessageBeans;
     private OnItemListener listener;
+    private Context context;
 
     public AlarmDetectionAdapter(Context context, List<CameraMessageBean> cameraMessageBeans) {
+        this.context = context;
         mInflater = LayoutInflater.from(context);
         this.cameraMessageBeans = cameraMessageBeans;
     }
@@ -83,14 +95,15 @@ public class AlarmDetectionAdapter extends RecyclerView.Adapter<AlarmDetectionAd
         private TextView mTvStartTime;
         private TextView mTvDescription;
         private DecryptImageView mSnapshot;
+        private Button mBtn;
 
         public MyViewHolder(final View view) {
             super(view);
             mTvStartTime = view.findViewById(R.id.tv_time_range_start_time);
             mTvDescription = view.findViewById(R.id.tv_alarm_detection_description);
             mSnapshot = view.findViewById(R.id.iv_time_range_snapshot);
+            mBtn = view.findViewById(R.id.btn_download_img);
         }
-
 
         private void showPicture(CameraMessageBean cameraMessageBean) {
             String attachPics = cameraMessageBean.getAttachPics();
@@ -101,6 +114,34 @@ public class AlarmDetectionAdapter extends RecyclerView.Adapter<AlarmDetectionAd
                     String decryption = attachPics.substring(index + 1);
                     String imageUrl = attachPics.substring(0, index);
                     mSnapshot.setImageURI(imageUrl, decryption.getBytes());
+                    //show download encryptedImg button
+                    mBtn.setVisibility(View.VISIBLE);
+                    mBtn.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            ITuyaIPCTool tool = TuyaIPCSdk.getTool();
+                            if (tool != null) {
+                                tool.downloadEncryptedImg(imageUrl, decryption, new ITuyaResultCallback<Bitmap>() {
+                                    @Override
+                                    public void onSuccess(Bitmap result) {
+                                        String path = Environment.getExternalStorageDirectory().getAbsolutePath() + "/Camera/";
+                                        File file = new File(path);
+                                        if (!file.exists()) {
+                                            file.mkdirs();
+                                        }
+                                        if (BitmapUtils.savePhotoToSDCard(result, path)) {
+                                            ToastUtil.showToast(context, "download suc!");
+                                        }
+                                    }
+
+                                    @Override
+                                    public void onError(String errorCode, String errorMessage) {
+                                        Log.e("AlarmDetectionAdapter", "download encrypted img err: " + errorCode + errorMessage);
+                                    }
+                                });
+                            }
+                        }
+                    });
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

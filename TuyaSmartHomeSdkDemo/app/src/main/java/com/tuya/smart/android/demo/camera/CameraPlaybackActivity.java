@@ -26,7 +26,7 @@ import com.tuya.smart.android.camera.timeline.TimeBean;
 import com.tuya.smart.android.camera.timeline.TuyaTimelineView;
 import com.tuya.smart.android.common.utils.L;
 import com.tuya.smart.android.demo.R;
-import com.tuya.smart.android.demo.base.utils.MessageUtil;
+import com.tuya.smart.android.demo.camera.utils.MessageUtil;
 import com.tuya.smart.android.demo.base.utils.ToastUtil;
 import com.tuya.smart.android.demo.camera.bean.RecordInfoBean;
 import com.tuya.smart.android.demo.camera.bean.TimePieceBean;
@@ -480,7 +480,7 @@ public class CameraPlaybackActivity extends AppCompatActivity implements View.On
     private void muteClick() {
         int mute;
         mute = mPlaybackMute == ICameraP2P.MUTE ? ICameraP2P.UNMUTE : ICameraP2P.MUTE;
-        mCameraP2P.setMute(ICameraP2P.PLAYMODE.PLAYBACK, mute, new OperationDelegateCallBack() {
+        mCameraP2P.setMute(mute, new OperationDelegateCallBack() {
             @Override
             public void onSuccess(int sessionId, int requestId, String data) {
                 mPlaybackMute = Integer.valueOf(data);

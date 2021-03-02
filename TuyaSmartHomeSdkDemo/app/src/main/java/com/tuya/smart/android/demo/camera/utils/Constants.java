@@ -24,6 +24,7 @@ import java.io.File;
 public class Constants {
 
     public static final String INTENT_P2P_TYPE = "intent_p2p_type";
+    public static final String INTENT_DEV_ID = "intent_dev_id";
     public static final int EXTERNAL_STORAGE_REQ_CODE = 10;
     public static final int EXTERNAL_AUDIO_REQ_CODE = 11;
 
@@ -32,7 +33,7 @@ public class Constants {
 
     public static final int MSG_CONNECT = 2033;
     public static final int MSG_CREATE_DEVICE = 2099;
-    public static final int MSG_GET_CLARITY = 2054;
+    public static final int MSG_SET_CLARITY = 2054;
 
     public static final int MSG_TALK_BACK_FAIL = 2021;
     public static final int MSG_TALK_BACK_BEGIN = 2022;
@@ -57,6 +58,7 @@ public class Constants {
     public static final int MOTION_CLASSIFY_FAILED = 2050;
     public static final int MOTION_CLASSIFY_SUCCESS = 2051;
     public static final int MSG_DELETE_ALARM_DETECTION = 2052;
+    public static final int MSG_GET_VIDEO_CLARITY = 2053;
 
     public synchronized static boolean hasStoragePermission() {
         String filePath = Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "a.log";

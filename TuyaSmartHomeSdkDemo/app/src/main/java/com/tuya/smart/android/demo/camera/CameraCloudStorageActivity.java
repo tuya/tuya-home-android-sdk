@@ -7,13 +7,14 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.tuya.smart.android.camera.sdk.TuyaIPCSdk;
+import com.tuya.smart.android.camera.sdk.api.ITuyaIPCCloud;
 import com.tuya.smart.android.demo.R;
 import com.tuya.smart.camera.camerasdk.typlayer.callback.IRegistorIOTCListener;
 import com.tuya.smart.camera.camerasdk.typlayer.callback.OnP2PCameraListener;
 import com.tuya.smart.camera.camerasdk.typlayer.callback.OperationCallBack;
 import com.tuya.smart.camera.camerasdk.typlayer.callback.OperationDelegateCallBack;
 import com.tuya.smart.camera.ipccamerasdk.cloud.ITYCloudCamera;
-import com.tuya.smart.camera.ipccamerasdk.cloud.TYCloudCamera;
 import com.tuya.smart.camera.middleware.cloud.CameraCloudSDK;
 import com.tuya.smart.camera.middleware.cloud.ICloudCacheManagerCallback;
 import com.tuya.smart.camera.middleware.cloud.bean.CloudDayBean;
@@ -60,22 +61,27 @@ public class CameraCloudStorageActivity extends AppCompatActivity implements ICl
         p2pType = getIntent().getIntExtra(INTENT_P2P_TYPE, -1);
 
         cameraCloudSDK = new CameraCloudSDK();
-        cloudCamera = new TYCloudCamera();
+        ITuyaIPCCloud cloud = TuyaIPCSdk.getCloud();
+        if (cloud != null) {
+            cloudCamera = cloud.createCloudCamera();
+        }
 
         mVideoView = findViewById(R.id.camera_cloud_video_view);
         mVideoView.setViewCallback(new AbsVideoViewCallback() {
             @Override
             public void onCreated(Object o) {
                 super.onCreated(o);
-                if (o instanceof IRegistorIOTCListener) {
+                if (o instanceof IRegistorIOTCListener && cloudCamera != null) {
                     cloudCamera.generateCloudCameraView((IRegistorIOTCListener) o);
                 }
             }
         });
         mVideoView.createVideoView(p2pType);
 
-        String cachePath = getApplication().getCacheDir().getPath();
-        cloudCamera.createCloudDevice(cachePath, devId);
+        if (cloudCamera != null) {
+            String cachePath = getApplication().getCacheDir().getPath();
+            cloudCamera.createCloudDevice(cachePath, devId);
+        }
 
         findViewById(R.id.status_btn).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -251,6 +257,7 @@ public class CameraCloudStorageActivity extends AppCompatActivity implements ICl
             cameraCloudSDK.onDestroy();
         }
         if (null != cloudCamera) {
+            cloudCamera.destroyCloudBusiness();
             cloudCamera.deinitCloudCamera();
         }
     }
@@ -298,22 +305,24 @@ public class CameraCloudStorageActivity extends AppCompatActivity implements ICl
     @Override
     public void getCloudConfigDataTags(String config) {
         //获取云存储 对应的配置信息，需要传入sdk进行鉴权 ，getTimeLineInfoByTimeSlice
-        cloudCamera.configCloudDataTagsV1(config, new OperationDelegateCallBack() {
+        if (null != cloudCamera) {
+            cloudCamera.configCloudDataTagsV1(config, new OperationDelegateCallBack() {
 
-            @Override
-            public void onSuccess(int i, int i1, String s) {
-                //成功之后开始播放
-                if (timePieceBeans.size() > 0) {
-                    int startTime = timePieceBeans.get(0).getStartTime();
-                    playCloudDataWithStartTime(startTime, (int) (getTodayEnd(startTime * 1000L) / 1000) - 1, true);
+                @Override
+                public void onSuccess(int i, int i1, String s) {
+                    //成功之后开始播放
+                    if (timePieceBeans.size() > 0) {
+                        int startTime = timePieceBeans.get(0).getStartTime();
+                        playCloudDataWithStartTime(startTime, (int) (getTodayEnd(startTime * 1000L) / 1000) - 1, true);
+                    }
                 }
-            }
 
-            @Override
-            public void onFailure(int i, int i1, int i2) {
+                @Override
+                public void onFailure(int i, int i1, int i2) {
 
-            }
-        });
+                }
+            });
+        }
     }
 
     long getTodayEnd(long currentTime) {
@@ -333,123 +342,137 @@ public class CameraCloudStorageActivity extends AppCompatActivity implements ICl
      * @param isEvent   是否是侦测事件
      */
     private void playCloudDataWithStartTime(int startTime, int endTime, final boolean isEvent) {
-        cloudCamera.playCloudDataWithStartTime(startTime, endTime, isEvent,
-                mAuthorityJson, mEncryptKey,
-                new OperationCallBack() {
-                    @Override
-                    public void onSuccess(int sessionId, int requestId, String data, Object camera) {
-                        // 播放中的回调, playing
-                    }
+        if (cloudCamera != null) {
+            cloudCamera.playCloudDataWithStartTime(startTime, endTime, isEvent,
+                    mAuthorityJson, mEncryptKey,
+                    new OperationCallBack() {
+                        @Override
+                        public void onSuccess(int sessionId, int requestId, String data, Object camera) {
+                            // 播放中的回调, playing
+                        }
 
-                    @Override
-                    public void onFailure(int sessionId, int requestId, int errCode, Object camera) {
+                        @Override
+                        public void onFailure(int sessionId, int requestId, int errCode, Object camera) {
 
-                    }
-                }, new OperationCallBack() {
-                    @Override
-                    public void onSuccess(int sessionId, int requestId, String data, Object camera) {
-                        //播放完成的回调, playCompleted
-                    }
+                        }
+                    }, new OperationCallBack() {
+                        @Override
+                        public void onSuccess(int sessionId, int requestId, String data, Object camera) {
+                            //播放完成的回调, playCompleted
+                        }
 
-                    @Override
-                    public void onFailure(int sessionId, int requestId, int errCode, Object camera) {
-                    }
-                });
+                        @Override
+                        public void onFailure(int sessionId, int requestId, int errCode, Object camera) {
+                        }
+                    });
+        }
     }
 
     /**
      * play resume
      */
     private void resumePlayCloudVideo() {
-        cloudCamera.resumePlayCloudVideo(new OperationDelegateCallBack() {
-            @Override
-            public void onSuccess(int sessionId, int requestId, String data) {
-            }
+        if (cloudCamera != null) {
+            cloudCamera.resumePlayCloudVideo(new OperationDelegateCallBack() {
+                @Override
+                public void onSuccess(int sessionId, int requestId, String data) {
+                }
 
-            @Override
-            public void onFailure(int sessionId, int requestId, int errCode) {
+                @Override
+                public void onFailure(int sessionId, int requestId, int errCode) {
 
-            }
-        });
+                }
+            });
+        }
     }
 
     /**
      * play pause
      */
     private void pausePlayCloudVideo() {
-        cloudCamera.pausePlayCloudVideo(new OperationDelegateCallBack() {
-            @Override
-            public void onSuccess(int sessionId, int requestId, String data) {
-            }
+        if (cloudCamera != null) {
+            cloudCamera.pausePlayCloudVideo(new OperationDelegateCallBack() {
+                @Override
+                public void onSuccess(int sessionId, int requestId, String data) {
+                }
 
-            @Override
-            public void onFailure(int sessionId, int requestId, int errCode) {
+                @Override
+                public void onFailure(int sessionId, int requestId, int errCode) {
 
-            }
-        });
+                }
+            });
+        }
     }
 
     /**
      * play stop
      */
     private void stopPlayCloudVideo() {
-        cloudCamera.stopPlayCloudVideo(new OperationDelegateCallBack() {
-            @Override
-            public void onSuccess(int sessionId, int requestId, String data) {
-            }
+        if (cloudCamera != null) {
+            cloudCamera.stopPlayCloudVideo(new OperationDelegateCallBack() {
+                @Override
+                public void onSuccess(int sessionId, int requestId, String data) {
+                }
 
-            @Override
-            public void onFailure(int sessionId, int requestId, int errCode) {
-            }
-        });
+                @Override
+                public void onFailure(int sessionId, int requestId, int errCode) {
+                }
+            });
+        }
     }
 
     /**
      * record start
      */
     public void startCloudRecordLocalMP4() {
-        cloudCamera.startRecordLocalMp4(IPCCameraUtils.recordPath(devId), String.valueOf(System.currentTimeMillis()), new OperationDelegateCallBack() {
-            @Override
-            public void onSuccess(int sessionId, int requestId, String data) {
-                Toast.makeText(CameraCloudStorageActivity.this, "record start success", Toast.LENGTH_SHORT).show();
-            }
+        if (cloudCamera != null) {
+            cloudCamera.startRecordLocalMp4(IPCCameraUtils.recordPath(devId), String.valueOf(System.currentTimeMillis()), new OperationDelegateCallBack() {
+                @Override
+                public void onSuccess(int sessionId, int requestId, String data) {
+                    Toast.makeText(CameraCloudStorageActivity.this, "record start success", Toast.LENGTH_SHORT).show();
+                }
 
-            @Override
-            public void onFailure(int sessionId, int requestId, int errCode) {
-            }
-        });
+                @Override
+                public void onFailure(int sessionId, int requestId, int errCode) {
+                }
+            });
+        }
     }
 
     /**
      * record stop
      */
     public void stopCloudRecordLocalMP4() {
-        cloudCamera.stopRecordLocalMp4(new OperationDelegateCallBack() {
-            @Override
-            public void onSuccess(int sessionId, int requestId, String data) {
-                Toast.makeText(CameraCloudStorageActivity.this, "record end success", Toast.LENGTH_SHORT).show();
-            }
+        if (cloudCamera != null) {
+            cloudCamera.stopRecordLocalMp4(new OperationDelegateCallBack() {
+                @Override
+                public void onSuccess(int sessionId, int requestId, String data) {
+                    Toast.makeText(CameraCloudStorageActivity.this, "record end success", Toast.LENGTH_SHORT).show();
+                }
 
-            @Override
-            public void onFailure(int sessionId, int requestId, int errCode) {
-            }
-        });
+                @Override
+                public void onFailure(int sessionId, int requestId, int errCode) {
+                }
+            });
+        }
     }
 
     /**
      * 截图
      */
     public void snapshot() {
-        cloudCamera.snapshot(IPCCameraUtils.recordSnapshotPath(devId), new OperationDelegateCallBack() {
-            @Override
-            public void onSuccess(int sessionId, int requestId, String data) {
-                Toast.makeText(CameraCloudStorageActivity.this, "snapshot success", Toast.LENGTH_SHORT).show();
-            }
+        if (cloudCamera != null) {
+            cloudCamera.snapshot(IPCCameraUtils.recordSnapshotPath(devId), new OperationDelegateCallBack() {
+                @Override
+                public void onSuccess(int sessionId, int requestId, String data) {
+                    Toast.makeText(CameraCloudStorageActivity.this, "snapshot success", Toast.LENGTH_SHORT).show();
+                }
 
-            @Override
-            public void onFailure(int sessionId, int requestId, int errCode) {
-            }
-        });
+                @Override
+                public void onFailure(int sessionId, int requestId, int errCode) {
+                }
+            });
+        }
     }
 
     /**
@@ -458,23 +481,27 @@ public class CameraCloudStorageActivity extends AppCompatActivity implements ICl
      * @param mute 值：ICameraP2P.UNMUTE , ICameraP2P.MUTE
      */
     public void setMuteValue(int mute) {
-        cloudCamera.setCloudMute(mute, new OperationDelegateCallBack() {
-            @Override
-            public void onSuccess(int sessionId, int requestId, String data) {
-                soundState = Integer.valueOf(data);
-            }
+        if (cloudCamera != null) {
+            cloudCamera.setCloudMute(mute, new OperationDelegateCallBack() {
+                @Override
+                public void onSuccess(int sessionId, int requestId, String data) {
+                    soundState = Integer.valueOf(data);
+                }
 
-            @Override
-            public void onFailure(int sessionId, int requestId, int errCode) {
-            }
-        });
+                @Override
+                public void onFailure(int sessionId, int requestId, int errCode) {
+                }
+            });
+        }
     }
 
     /**
      * 获取音量
      */
     public void getMuteValue() {
-        cloudCamera.getCloudMute();
+        if (cloudCamera != null) {
+            cloudCamera.getCloudMute();
+        }
     }
 
 }
