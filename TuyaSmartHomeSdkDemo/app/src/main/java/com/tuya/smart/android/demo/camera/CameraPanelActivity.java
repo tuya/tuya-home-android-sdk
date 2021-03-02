@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
@@ -18,6 +19,9 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import com.tuya.smart.android.camera.sdk.TuyaIPCSdk;
+import com.tuya.smart.android.camera.sdk.api.ITuyaIPCCore;
+import com.tuya.smart.android.camera.sdk.api.ITuyaIPCDoorbell;
 import com.tuya.smart.android.common.utils.L;
 import com.tuya.smart.android.demo.R;
 import com.tuya.smart.android.demo.base.utils.MessageUtil;
@@ -29,7 +33,6 @@ import com.tuya.smart.camera.camerasdk.typlayer.callback.OnRenderDirectionCallba
 import com.tuya.smart.camera.camerasdk.typlayer.callback.OperationDelegateCallBack;
 import com.tuya.smart.camera.ipccamerasdk.p2p.ICameraP2P;
 import com.tuya.smart.camera.middleware.p2p.ITuyaSmartCameraP2P;
-import com.tuya.smart.camera.middleware.p2p.TuyaSmartCameraP2PFactory;
 import com.tuya.smart.camera.middleware.widget.AbsVideoViewCallback;
 import com.tuya.smart.camera.middleware.widget.TuyaCameraView;
 import com.tuya.smart.camera.utils.AudioUtils;
@@ -46,7 +49,8 @@ import static com.tuya.smart.android.demo.camera.utils.Constants.ARG1_OPERATE_FA
 import static com.tuya.smart.android.demo.camera.utils.Constants.ARG1_OPERATE_SUCCESS;
 import static com.tuya.smart.android.demo.camera.utils.Constants.INTENT_P2P_TYPE;
 import static com.tuya.smart.android.demo.camera.utils.Constants.MSG_CONNECT;
-import static com.tuya.smart.android.demo.camera.utils.Constants.MSG_GET_CLARITY;
+import static com.tuya.smart.android.demo.camera.utils.Constants.MSG_SET_CLARITY;
+import static com.tuya.smart.android.demo.camera.utils.Constants.MSG_GET_VIDEO_CLARITY;
 import static com.tuya.smart.android.demo.camera.utils.Constants.MSG_MUTE;
 import static com.tuya.smart.android.demo.camera.utils.Constants.MSG_SCREENSHOT;
 import static com.tuya.smart.android.demo.camera.utils.Constants.MSG_TALK_BACK_BEGIN;
@@ -67,7 +71,7 @@ public class CameraPanelActivity extends AppCompatActivity implements View.OnCli
     private TuyaCameraView mVideoView;
     private ImageView muteImg;
     private TextView qualityTv;
-    private TextView speakTxt, recordTxt, photoTxt, replayTxt, settingTxt, cloudStorageTxt,messageCenterTxt;
+    private TextView speakTxt, recordTxt, photoTxt, replayTxt, settingTxt, cloudStorageTxt, messageCenterTxt, deviceInfoTxt;
 
     private static final int ASPECT_RATIO_WIDTH = 9;
     private static final int ASPECT_RATIO_HEIGHT = 16;
@@ -76,6 +80,7 @@ public class CameraPanelActivity extends AppCompatActivity implements View.OnCli
     private boolean isPlay = false;
     private int previewMute = ICameraP2P.MUTE;
     private int videoClarity = ICameraP2P.HD;
+    private String currVideoClarity;
 
     private String picPath, videoPath;
 
@@ -92,7 +97,7 @@ public class CameraPanelActivity extends AppCompatActivity implements View.OnCli
                 case MSG_CONNECT:
                     handleConnect(msg);
                     break;
-                case MSG_GET_CLARITY:
+                case MSG_SET_CLARITY:
                     handleClarity(msg);
                     break;
                 case MSG_MUTE:
@@ -115,6 +120,9 @@ public class CameraPanelActivity extends AppCompatActivity implements View.OnCli
                     break;
                 case MSG_TALK_BACK_OVER:
                     handleStopTalk(msg);
+                    break;
+                case MSG_GET_VIDEO_CLARITY:
+                    handleGetVideoClarity(msg);
                     break;
             }
             super.handleMessage(msg);
@@ -178,6 +186,20 @@ public class CameraPanelActivity extends AppCompatActivity implements View.OnCli
         }
     }
 
+    private void handleGetVideoClarity(Message msg) {
+        if (msg.arg1 == ARG1_OPERATE_SUCCESS && !TextUtils.isEmpty(currVideoClarity)) {
+            String info = "other";
+            if (currVideoClarity.equals(String.valueOf(ICameraP2P.HD))) {
+                info = "HD";
+            } else if (currVideoClarity.equals(String.valueOf(ICameraP2P.STANDEND))) {
+                info = "SD";
+            }
+            ToastUtil.showToast(CameraPanelActivity.this, "current video clarity is: " + info);
+        } else {
+            ToastUtil.shortToast(CameraPanelActivity.this, "operation fail");
+        }
+    }
+
     /**
      * the lower power Doorbell device change to true
      */
@@ -191,7 +213,7 @@ public class CameraPanelActivity extends AppCompatActivity implements View.OnCli
         initData();
         initListener();
 
-        if(mDeviceControl != null && mDeviceControl.isSupportCameraDps(DpPTZControl.ID)) {
+        if (mDeviceControl != null && mDeviceControl.isSupportCameraDps(DpPTZControl.ID)) {
             mVideoView.setOnRenderDirectionCallback(new OnRenderDirectionCallback() {
 
                 @Override
@@ -201,25 +223,25 @@ public class CameraPanelActivity extends AppCompatActivity implements View.OnCli
 
                 @Override
                 public void onRight() {
-                    mDeviceControl.publishCameraDps(DpPTZControl.ID,PTZDirection.RIGHT.getDpValue());
+                    mDeviceControl.publishCameraDps(DpPTZControl.ID, PTZDirection.RIGHT.getDpValue());
 
                 }
 
                 @Override
                 public void onUp() {
-                    mDeviceControl.publishCameraDps(DpPTZControl.ID,PTZDirection.UP.getDpValue());
+                    mDeviceControl.publishCameraDps(DpPTZControl.ID, PTZDirection.UP.getDpValue());
 
                 }
 
                 @Override
                 public void onDown() {
-                    mDeviceControl.publishCameraDps(DpPTZControl.ID,PTZDirection.DOWN.getDpValue());
+                    mDeviceControl.publishCameraDps(DpPTZControl.ID, PTZDirection.DOWN.getDpValue());
 
                 }
 
                 @Override
                 public void onCancel() {
-                    mDeviceControl.publishCameraDps(DpPTZStop.ID,true);
+                    mDeviceControl.publishCameraDps(DpPTZStop.ID, true);
 
                 }
             });
@@ -244,8 +266,11 @@ public class CameraPanelActivity extends AppCompatActivity implements View.OnCli
         replayTxt = findViewById(R.id.replay_Txt);
         settingTxt = findViewById(R.id.setting_Txt);
         settingTxt.setOnClickListener(this);
+        deviceInfoTxt = findViewById(R.id.info_Txt);
+        deviceInfoTxt.setOnClickListener(this);
+        findViewById(R.id.get_clarity_Txt).setOnClickListener(this);
         cloudStorageTxt = findViewById(R.id.cloud_Txt);
-        messageCenterTxt =  findViewById(R.id.message_center_Txt);
+        messageCenterTxt = findViewById(R.id.message_center_Txt);
 
         WindowManager windowManager = (WindowManager) this.getSystemService(WINDOW_SERVICE);
         int width = windowManager.getDefaultDisplay().getWidth();
@@ -256,16 +281,19 @@ public class CameraPanelActivity extends AppCompatActivity implements View.OnCli
 
         muteImg.setSelected(true);
     }
-    
+
     private void initData() {
         devId = getIntent().getStringExtra(INTENT_DEVID);
         p2pType = getIntent().getIntExtra(INTENT_P2P_TYPE, -1);
-        mCameraP2P = TuyaSmartCameraP2PFactory.createCameraP2P(p2pType, devId);
+        ITuyaIPCCore cameraInstance = TuyaIPCSdk.getCameraInstance();
+        if (cameraInstance != null) {
+            mCameraP2P = cameraInstance.createCameraP2P(devId);
+        }
         mVideoView.setViewCallback(new AbsVideoViewCallback() {
             @Override
             public void onCreated(Object o) {
                 super.onCreated(o);
-                if (null != mCameraP2P){
+                if (null != mCameraP2P) {
                     mCameraP2P.generateCameraView(o);
                 }
             }
@@ -273,7 +301,7 @@ public class CameraPanelActivity extends AppCompatActivity implements View.OnCli
         mVideoView.createVideoView(p2pType);
         if (null == mCameraP2P) {
             showNotSupportToast();
-        }else{
+        } else {
             mDeviceControl = TuyaCameraDeviceControlSDK.getCameraDeviceInstance(devId);
         }
     }
@@ -283,7 +311,7 @@ public class CameraPanelActivity extends AppCompatActivity implements View.OnCli
     }
 
     private void preview() {
-        mCameraP2P.startPreview(new OperationDelegateCallBack() {
+        mCameraP2P.startPreview(videoClarity, new OperationDelegateCallBack() {
             @Override
             public void onSuccess(int sessionId, int requestId, String data) {
                 Log.d(TAG, "start preview onSuccess");
@@ -358,6 +386,26 @@ public class CameraPanelActivity extends AppCompatActivity implements View.OnCli
                 intent3.putExtra(CommonDeviceDebugPresenter.INTENT_DEVID, devId);
                 startActivity(intent3);
                 break;
+            case R.id.info_Txt:
+                Intent intent4 = new Intent(CameraPanelActivity.this, CameraInfoActivity.class);
+                intent4.putExtra(Constants.INTENT_DEV_ID, devId);
+                startActivity(intent4);
+                break;
+            case R.id.get_clarity_Txt:
+                if (mCameraP2P != null) {
+                    mCameraP2P.getVideoClarity(new OperationDelegateCallBack() {
+                        @Override
+                        public void onSuccess(int i, int i1, String s) {
+                            currVideoClarity = s;
+                            mHandler.sendMessage(MessageUtil.getMessage(MSG_GET_VIDEO_CLARITY, ARG1_OPERATE_SUCCESS));
+                        }
+
+                        @Override
+                        public void onFailure(int i, int i1, int i2) {
+                            mHandler.sendMessage(MessageUtil.getMessage(MSG_GET_VIDEO_CLARITY, ARG1_OPERATE_FAIL));
+                        }
+                    });
+                }
             default:
                 break;
         }
@@ -417,7 +465,7 @@ public class CameraPanelActivity extends AppCompatActivity implements View.OnCli
             }
             picPath = path;
         }
-        mCameraP2P.snapshot(picPath, CameraPanelActivity.this, ICameraP2P.PLAYMODE.LIVE, new OperationDelegateCallBack() {
+        mCameraP2P.snapshot(picPath, CameraPanelActivity.this, new OperationDelegateCallBack() {
             @Override
             public void onSuccess(int sessionId, int requestId, String data) {
                 mHandler.sendMessage(MessageUtil.getMessage(MSG_SCREENSHOT, ARG1_OPERATE_SUCCESS));
@@ -433,7 +481,7 @@ public class CameraPanelActivity extends AppCompatActivity implements View.OnCli
     private void muteClick() {
         int mute;
         mute = previewMute == ICameraP2P.MUTE ? ICameraP2P.UNMUTE : ICameraP2P.MUTE;
-        mCameraP2P.setMute(ICameraP2P.PLAYMODE.LIVE, mute, new OperationDelegateCallBack() {
+        mCameraP2P.setMute(mute, new OperationDelegateCallBack() {
             @Override
             public void onSuccess(int sessionId, int requestId, String data) {
                 previewMute = Integer.valueOf(data);
@@ -489,15 +537,14 @@ public class CameraPanelActivity extends AppCompatActivity implements View.OnCli
             @Override
             public void onSuccess(int sessionId, int requestId, String data) {
                 videoClarity = Integer.valueOf(data);
-                mHandler.sendMessage(MessageUtil.getMessage(MSG_GET_CLARITY, ARG1_OPERATE_SUCCESS));
+                mHandler.sendMessage(MessageUtil.getMessage(MSG_SET_CLARITY, ARG1_OPERATE_SUCCESS));
             }
 
             @Override
             public void onFailure(int sessionId, int requestId, int errCode) {
-                mHandler.sendMessage(MessageUtil.getMessage(MSG_GET_CLARITY, ARG1_OPERATE_FAIL));
+                mHandler.sendMessage(MessageUtil.getMessage(MSG_SET_CLARITY, ARG1_OPERATE_FAIL));
             }
         });
-
     }
 
     private void recordStatue(boolean isRecording) {
@@ -515,7 +562,7 @@ public class CameraPanelActivity extends AppCompatActivity implements View.OnCli
         //must register again,or can't callback
         if (null != mCameraP2P) {
             AudioUtils.getModel(this);
-            mCameraP2P.registorOnP2PCameraListener(p2pCameraListener);
+            mCameraP2P.registerP2PCameraListener(p2pCameraListener);
             mCameraP2P.generateCameraView(mVideoView.createdView());
             if (mCameraP2P.isConnecting()) {
                 mCameraP2P.startPreview(new OperationDelegateCallBack() {
@@ -531,6 +578,13 @@ public class CameraPanelActivity extends AppCompatActivity implements View.OnCli
                 });
             }
             if (!mCameraP2P.isConnecting()) {
+                ITuyaIPCCore cameraInstance = TuyaIPCSdk.getCameraInstance();
+                if (cameraInstance != null && cameraInstance.isLowPowerDevice(devId)) {
+                    ITuyaIPCDoorbell doorbell = TuyaIPCSdk.getDoorbell();
+                    if (doorbell != null) {
+                        doorbell.wirelessWake(devId);
+                    }
+                }
                 mCameraP2P.connect(devId, new OperationDelegateCallBack() {
                     @Override
                     public void onSuccess(int i, int i1, String s) {
@@ -549,12 +603,12 @@ public class CameraPanelActivity extends AppCompatActivity implements View.OnCli
     private AbsP2pCameraListener p2pCameraListener = new AbsP2pCameraListener() {
         @Override
         public void onReceiveSpeakerEchoData(ByteBuffer pcm, int sampleRate) {
-            if (null != mCameraP2P){
+            if (null != mCameraP2P) {
                 int length = pcm.capacity();
                 L.d(TAG, "receiveSpeakerEchoData pcmlength " + length + " sampleRate " + sampleRate);
                 byte[] pcmData = new byte[length];
                 pcm.get(pcmData, 0, length);
-                mCameraP2P.sendAudioTalkData(pcmData,length);
+                mCameraP2P.sendAudioTalkData(pcmData, length);
             }
         }
     };
@@ -563,24 +617,25 @@ public class CameraPanelActivity extends AppCompatActivity implements View.OnCli
     protected void onPause() {
         super.onPause();
         mVideoView.onPause();
-        if (isSpeaking) {
-            mCameraP2P.stopAudioTalk(null);
-        }
-        if (isPlay) {
-            mCameraP2P.stopPreview(new OperationDelegateCallBack() {
-                @Override
-                public void onSuccess(int sessionId, int requestId, String data) {
-
-                }
-
-                @Override
-                public void onFailure(int sessionId, int requestId, int errCode) {
-
-                }
-            });
-            isPlay = false;
-        }
         if (null != mCameraP2P) {
+            if (isSpeaking) {
+                mCameraP2P.stopAudioTalk(null);
+            }
+            if (isPlay) {
+                mCameraP2P.stopPreview(new OperationDelegateCallBack() {
+                    @Override
+                    public void onSuccess(int sessionId, int requestId, String data) {
+
+                    }
+
+                    @Override
+                    public void onFailure(int sessionId, int requestId, int errCode) {
+
+                    }
+                });
+                isPlay = false;
+            }
+            mCameraP2P.removeOnP2PCameraListener();
             mCameraP2P.disconnect(new OperationDelegateCallBack() {
                 @Override
                 public void onSuccess(int i, int i1, String s) {

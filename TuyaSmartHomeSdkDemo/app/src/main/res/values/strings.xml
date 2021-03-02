@@ -742,6 +742,6 @@
 
     <string name="login_qr_app_info">Scan QR to login</string>
     <string name="login_qrlogin_pad_info">Need to log in with your phone</string>
-    <string name="login_qrcode" >QR Code Login</string>
+    <string name="login_qrcode">QR Code Login</string>
 
 </resources>

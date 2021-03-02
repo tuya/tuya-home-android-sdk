@@ -480,7 +480,7 @@ public class CameraPlaybackActivity extends AppCompatActivity implements View.On
     private void muteClick() {
         int mute;
         mute = mPlaybackMute == ICameraP2P.MUTE ? ICameraP2P.UNMUTE : ICameraP2P.MUTE;
-        mCameraP2P.setMute(ICameraP2P.PLAYMODE.PLAYBACK, mute, new OperationDelegateCallBack() {
+        mCameraP2P.setMute(mute, new OperationDelegateCallBack() {
             @Override
             public void onSuccess(int sessionId, int requestId, String data) {
                 mPlaybackMute = Integer.valueOf(data);

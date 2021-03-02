@@ -72,4 +72,12 @@
         android:layout_marginRight="45dp"
         fresco:actualImageScaleType="fitXY"
         fresco:roundedCornerRadius="4dp" />
+
+    <Button
+        android:id="@+id/btn_download_img"
+        android:text="download"
+        android:layout_alignRight="@+id/iv_time_range_snapshot"
+        android:layout_alignBottom="@+id/iv_time_range_snapshot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </RelativeLayout>

@@ -53,6 +53,10 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
+    lintOptions {
+        abortOnError false
+    }
+
     dependencies {
         implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
         //***** required ****//
@@ -60,7 +64,7 @@ android {
         implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.14.9'
 
         // latest release version
-        implementation 'com.tuya.smart:tuyasmart:3.22.0'
+        implementation 'com.tuya.smart:tuyasmart:3.24.0'
 
         implementation 'com.tuya.smart:tuyasmart-shortcutparser:0.0.1'
         implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
@@ -80,17 +84,11 @@ android {
         implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
 
         //ipc sdk
-        implementation 'com.tuya.smart:tuyasmart-ipc-sdk:3.22.0-open'
-        implementation 'com.tuya.smart:tuyasmart-base-utils:3.18.0r143-rc.9'
+        implementation 'com.tuya.smart:tuyasmart-ipc-sdk:3.24.0-open'
+
         //option:
-        //camera msg center
-        implementation 'com.tuya.smart:tuyasmart-ipc-camera-message:3.13.0r128'
         //device control
         implementation 'com.tuya.smart:tuyasmart-ipc-devicecontrol:3.17.0r139'
-        //encrypted image
-        implementation 'com.tuya.smart:tuyasmart-ipc-camera-sdk-ext:3.22.0-open'
-        implementation 'com.tuya.smart:tuyasmart-imagepipeline-okhttp3:0.0.1'
-        implementation 'com.facebook.fresco:fresco:2.2.0'
         //timeline view
         implementation 'com.tuya.smart:tuyasmart-ipc-camera-timeline:1.0.0'
 
