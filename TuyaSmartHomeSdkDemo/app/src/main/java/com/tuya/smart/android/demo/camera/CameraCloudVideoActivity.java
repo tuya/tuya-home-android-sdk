@@ -14,7 +14,7 @@ import com.tuya.smart.android.camera.sdk.TuyaIPCSdk;
 import com.tuya.smart.android.camera.sdk.api.ITuyaIPCCore;
 import com.tuya.smart.android.camera.sdk.api.ITuyaIPCMsg;
 import com.tuya.smart.android.demo.R;
-import com.tuya.smart.android.demo.base.utils.MessageUtil;
+import com.tuya.smart.android.demo.camera.utils.MessageUtil;
 import com.tuya.smart.android.demo.base.utils.ToastUtil;
 import com.tuya.smart.camera.camerasdk.typlayer.callback.AbsP2pCameraListener;
 import com.tuya.smart.camera.camerasdk.typlayer.callback.IRegistorIOTCListener;

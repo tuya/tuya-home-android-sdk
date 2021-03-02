@@ -24,9 +24,9 @@ import com.tuya.smart.android.camera.sdk.api.ITuyaIPCCore;
 import com.tuya.smart.android.camera.sdk.api.ITuyaIPCDoorbell;
 import com.tuya.smart.android.common.utils.L;
 import com.tuya.smart.android.demo.R;
-import com.tuya.smart.android.demo.base.utils.MessageUtil;
 import com.tuya.smart.android.demo.base.utils.ToastUtil;
 import com.tuya.smart.android.demo.camera.utils.Constants;
+import com.tuya.smart.android.demo.camera.utils.MessageUtil;
 import com.tuya.smart.android.demo.device.common.CommonDeviceDebugPresenter;
 import com.tuya.smart.camera.camerasdk.typlayer.callback.AbsP2pCameraListener;
 import com.tuya.smart.camera.camerasdk.typlayer.callback.OnRenderDirectionCallback;
@@ -131,7 +131,7 @@ public class CameraPanelActivity extends AppCompatActivity implements View.OnCli
 
     private void handleStopTalk(Message msg) {
         if (msg.arg1 == ARG1_OPERATE_SUCCESS) {
-            ToastUtil.shortToast(CameraPanelActivity.this, "stop talk success" + msg.obj);
+            ToastUtil.shortToast(CameraPanelActivity.this, "stop talk success");
         } else {
             ToastUtil.shortToast(CameraPanelActivity.this, "operation fail");
         }
@@ -139,7 +139,7 @@ public class CameraPanelActivity extends AppCompatActivity implements View.OnCli
 
     private void handleStartTalk(Message msg) {
         if (msg.arg1 == ARG1_OPERATE_SUCCESS) {
-            ToastUtil.shortToast(CameraPanelActivity.this, "start talk success" + msg.obj);
+            ToastUtil.shortToast(CameraPanelActivity.this, "start talk success");
         } else {
             ToastUtil.shortToast(CameraPanelActivity.this, "operation fail");
         }

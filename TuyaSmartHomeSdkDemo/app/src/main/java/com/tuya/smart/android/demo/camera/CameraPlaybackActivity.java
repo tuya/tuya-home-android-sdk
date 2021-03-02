@@ -26,7 +26,7 @@ import com.tuya.smart.android.camera.timeline.TimeBean;
 import com.tuya.smart.android.camera.timeline.TuyaTimelineView;
 import com.tuya.smart.android.common.utils.L;
 import com.tuya.smart.android.demo.R;
-import com.tuya.smart.android.demo.base.utils.MessageUtil;
+import com.tuya.smart.android.demo.camera.utils.MessageUtil;
 import com.tuya.smart.android.demo.base.utils.ToastUtil;
 import com.tuya.smart.android.demo.camera.bean.RecordInfoBean;
 import com.tuya.smart.android.demo.camera.bean.TimePieceBean;
