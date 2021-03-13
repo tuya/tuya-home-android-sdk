@@ -25,6 +25,7 @@ var interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user =
     [ "loginWithEmail", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#af257e73c84688c78c1267e1452c6d007", null ],
     [ "loginWithPhone", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#afc431f9896604f18caed54a0f90f9db6", null ],
     [ "loginWithPhonePassword", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#a0969cc21a2ce3d962f6d6f62ea405d6f", null ],
+    [ "loginWithTicket", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#a510d7b0f931356d4162628526e8c77b3", null ],
     [ "loginWithUid", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#a7c392eac7c658ba17aa429517e54affd", null ],
     [ "logout", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#af201d306962a4d942b040f810fe3dbac", null ],
     [ "onDestroy", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#a60aa029f01a538c80618a22133e2b7cc", null ],

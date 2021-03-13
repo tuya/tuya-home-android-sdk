@@ -206,6 +206,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:abbc40281a2e40a1195e96460170a1e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33c9f63c08b5aa5d5fc03cc7263e722d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#a33c9f63c08b5aa5d5fc03cc7263e722d">touristBindWithUserName</a> (String countryCode, String userName, String verifyCode, String password, final <a class="el" href="interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_boolean_callback.html">IBooleanCallback</a> callback)</td></tr>
 <tr class="separator:a33c9f63c08b5aa5d5fc03cc7263e722d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a510d7b0f931356d4162628526e8c77b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#a510d7b0f931356d4162628526e8c77b3">loginWithTicket</a> (String ticket, final <a class="el" href="interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_login_callback.html">ILoginCallback</a> callback)</td></tr>
+<tr class="separator:a510d7b0f931356d4162628526e8c77b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6558bbf73b47694dbf8a6eae175aefb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#a6558bbf73b47694dbf8a6eae175aefb1">ticketGetUserInfo</a> (String ticket, final <a class="el" href="interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_login_callback.html">ILoginCallback</a> callback)</td></tr>
 <tr class="separator:a6558bbf73b47694dbf8a6eae175aefb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -1227,6 +1229,42 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">countryCode</td><td>Mobile Area Code: Such as "86". </td></tr>
     <tr><td class="paramname">phone</td><td>Mobile number. </td></tr>
     <tr><td class="paramname">passwd</td><td>Login password. </td></tr>
+    <tr><td class="paramname">callback</td><td>Callback <a class="el" href="interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_login_callback.html">com.tuya.smart.android.user.api.ILoginCallback</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a510d7b0f931356d4162628526e8c77b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a510d7b0f931356d4162628526e8c77b3">&#9670;&nbsp;</a></span>loginWithTicket()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void com.tuya.smart.sdk.api.ITuyaUser.loginWithTicket </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>ticket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">final <a class="el" href="interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_login_callback.html">ILoginCallback</a>&#160;</td>
+          <td class="paramname"><em>callback</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Login by ticket.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ticket</td><td>ticket </td></tr>
     <tr><td class="paramname">callback</td><td>Callback <a class="el" href="interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_login_callback.html">com.tuya.smart.android.user.api.ILoginCallback</a>. </td></tr>
   </table>
   </dd>
@@ -2306,7 +2344,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>ticket get user info</p>
+<p>Login by ticket.</p>
+<p>Deprecated, recommended to use <a class="el" href="interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#a510d7b0f931356d4162628526e8c77b3">loginWithTicket(String, ILoginCallback)</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ticket</td><td>ticket </td></tr>
