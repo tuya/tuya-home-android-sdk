@@ -13,4 +13,4 @@
 
 
 
-更多文档请参考：[涂鸦智能Android SDK](https://tuyainc.github.io/tuyasmart_home_android_sdk_doc/zh-hans/)
+更多文档请参考：[涂鸦智能Android SDK](https://developer.tuya.com/cn/docs/app-development/android-app-sdk/featureoverview?id=Ka69nt97vtsfu)

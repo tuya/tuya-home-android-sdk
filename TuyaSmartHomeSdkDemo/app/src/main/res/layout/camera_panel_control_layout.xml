@@ -115,6 +115,30 @@
             android:text="setting"
             android:textColor="@color/camera_panel_control_color" />
 
+        <TextView
+            android:id="@+id/info_Txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/camera_icon_playback_selector"
+            android:gravity="center"
+            android:padding="@dimen/mg_20"
+            android:text="device info"
+            android:textColor="@color/camera_panel_control_color" />
+
+
+        <TextView
+            android:id="@+id/get_clarity_Txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/camera_icon_playback_selector"
+            android:gravity="center"
+            android:padding="@dimen/mg_20"
+            android:text="get clarity"
+            android:textColor="@color/camera_panel_control_color" />
+
+
     </LinearLayout>
 
 </LinearLayout>

@@ -9,6 +9,8 @@ import android.net.wifi.WifiManager;
 import com.tuya.smart.android.base.event.NetWorkStatusEvent;
 import com.tuya.smart.android.base.event.NetWorkStatusEventModel;
 import com.tuya.smart.android.base.utils.PreferencesUtil;
+import com.tuya.smart.android.camera.sdk.TuyaIPCSdk;
+import com.tuya.smart.android.camera.sdk.api.ITuyaIPCCore;
 import com.tuya.smart.android.common.utils.L;
 import com.tuya.smart.android.demo.R;
 import com.tuya.smart.android.demo.base.activity.BrowserActivity;
@@ -117,15 +119,14 @@ public class DeviceListFragmentPresenter extends BasePresenter implements NetWor
             Intent intent = new Intent(mActivity, SwitchActivity.class);
             intent.putExtra(SwitchActivity.INTENT_DEVID, devBean.getDevId());
             mActivity.startActivity(intent);
-        } else if ("sp".equals(devBean.getProductBean().getCategory())) {
+        } else if (TuyaIPCSdk.getCameraInstance() != null && TuyaIPCSdk.getCameraInstance().isIPCDevice(devBean.devId)) {
             Intent intent = new Intent(mActivity, CameraPanelActivity.class);
             intent.putExtra(CommonDeviceDebugPresenter.INTENT_DEVID, devBean.getDevId());
             Map<String, Object> map = devBean.getSkills();
             int p2pType = -1;
-            if (map == null || map.size() == 0) {
-                p2pType = -1;
-            } else {
-                p2pType = (Integer) (map.get("p2pType"));
+            ITuyaIPCCore cameraInstance = TuyaIPCSdk.getCameraInstance();
+            if (cameraInstance != null) {
+                p2pType = cameraInstance.getP2PType(devBean.getDevId());
             }
             intent.putExtra(INTENT_P2P_TYPE, p2pType);
             intent.putExtra(CommonDeviceDebugPresenter.INTENT_DEVID, devBean.getDevId());

@@ -218,6 +218,7 @@
             android:screenOrientation="portrait" />
         <activity android:name=".camera.CameraSettingActivity" />
         <activity android:name=".camera.QrCodeConfigActivity" />
+        <activity android:name=".camera.CameraInfoActivity"></activity>
         <!--  camera module -->
     </application>
 
