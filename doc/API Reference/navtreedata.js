@@ -25,7 +25,6 @@
 var NAVTREE =
 [
   [ "Tuya Android Home SDK API Doc", "index.html", [
-    [ "Tuya Android Home SDK API Reference", "index.html", null ],
     [ "Deprecated List", "deprecated.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ]
@@ -57,11 +56,11 @@ var NAVTREEINDEX =
 "classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean.html#a89fbfbb06ecf8db3efd0026deab49be6",
 "classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_timer.html#a6b9f1725b81a6b265a013675803c0ccc",
 "classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1push_1_1_tuya_push_bean_1_1_notification_bean.html#a8fa9e1c3eb1c4361e417d09c160953f4",
-"interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_manager.html#a1fc7b0c3443472f001b06857d4846f5e",
-"interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1anntation_1_1_member_role.html",
-"interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1api_1_1_i_tuya_home_manager.html#a625ad1894090afeed4d2afa2257d483b",
-"interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_device_cache.html#a7c40cd658a0bd6c8c411ee5eaba26c04",
-"interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_message.html#a890b9a90837b3fb781fa0897502f007f",
+"interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_manager.html#a278c5f487e036fac3c1e20f40e6fe930",
+"interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1anntation_1_1_member_role.html#a15746b553c93284a0de6cc30ea76d4bd",
+"interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1api_1_1_i_tuya_home_manager.html#a86793668b25bf928c875a89e959d3d7b",
+"interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_device_cache.html#a97f2828ada6a12a7c3b0f4310129376a",
+"interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_message.html#a8ef1b7a4426c8f726cea31d0084c0674",
 "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1bluemesh_1_1_i_tuya_room_manager.html#a8526ff5e7b98e83be396f5e25da2b1fd"
 ];
 

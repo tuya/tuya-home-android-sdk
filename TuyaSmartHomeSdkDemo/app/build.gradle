@@ -64,7 +64,7 @@ android {
         implementation 'com.squareup.okhttp3:okhttp-urlconnection:3.14.9'
 
         // latest release version
-        implementation 'com.tuya.smart:tuyasmart:3.24.0'
+        implementation 'com.tuya.smart:tuyasmart:3.24.1'
 
         implementation 'com.tuya.smart:tuyasmart-shortcutparser:0.0.1'
         implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
