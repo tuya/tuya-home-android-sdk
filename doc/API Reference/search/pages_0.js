@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['deprecated_20list_5145',['Deprecated List',['../deprecated.html',1,'']]]
+  ['tuya_20android_20home_20sdk_20api_20reference_275',['Tuya Android Home SDK API Reference',['../index.html',1,'']]]
 ];
