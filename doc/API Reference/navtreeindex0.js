@@ -1,5 +1,10 @@
 var NAVTREEINDEX0 =
 {
+"":[1,0,0],
+"":[1,0,0,0,0,0],
+"":[1,0,0,0,0,0,0],
+"":[1,0,0,0],
+"":[1,0,0,0,0],
 "annotated.html":[2,0],
 "classcom_1_1tuya_1_1smart_1_1android_1_1ble_1_1api_1_1_config_error_bean.html":[2,0,0,0,0,0,0,0,4],
 "classcom_1_1tuya_1_1smart_1_1android_1_1ble_1_1api_1_1_config_error_bean.html#a025493287310c781aceca5a81091810e":[2,0,0,0,0,0,0,0,4,1],
@@ -145,10 +150,5 @@ var NAVTREEINDEX0 =
 "namespacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1api.html":[1,0,0,0,0,0,0,0],
 "namespacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1builder.html":[1,0,0,0,0,0,0,1],
 "namespaces.html":[1,0],
-"pages.html":[],
-"":[1,0,0,0],
-"":[1,0,0,0,0,0],
-"":[1,0,0],
-"":[1,0,0,0,0,0,0],
-"":[1,0,0,0,0]
+"pages.html":[]
 };
