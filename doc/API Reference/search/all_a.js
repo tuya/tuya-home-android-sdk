@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['user_135',['User',['../classcom_1_1tuya_1_1smart_1_1android_1_1user_1_1bean_1_1_user.html',1,'com.tuya.smart.android.user.bean.User'],['../classcom_1_1tuya_1_1smart_1_1android_1_1user_1_1bean_1_1_user.html#af2da733afa3ba1a211b2f8407579ec96',1,'com.tuya.smart.android.user.bean.User.User()']]]
+  ['key_1187',['key',['../classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1cache_1_1_cache_obj.html#a0ad54cef3e52a6f6b04bb09c0064bfcd',1,'com::tuya::smart::sdk::bean::cache::CacheObj']]]
 ];

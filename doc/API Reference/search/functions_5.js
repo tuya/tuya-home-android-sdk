@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['remove_215',['remove',['../interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_user_storage.html#a59520f8db65841747882bb1c75a5818a',1,'com::tuya::smart::android::user::api::IUserStorage']]]
+  ['formatmessage_2910',['formatMessage',['../classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_push_bean.html#a7b90f80d17a6c988f950a22ec1d2c4e0',1,'com::tuya::smart::sdk::bean::PushBean']]]
 ];
