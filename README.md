@@ -2,7 +2,7 @@
 
 ## Tuya Smart Android SDK
 
-[![CircleCI](https://circleci.com/gh/TuyaInc/tuyasmart_home_android_sdk/tree/master.svg?style=svg)](https://circleci.com/gh/TuyaInc/tuyasmart_home_android_sdk/tree/master)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![version](https://img.shields.io/badge/release-3.24.0-brightgreen)](https://developer.tuya.com/en/docs/app-development/android-app-sdk/change-log/changelog?id=Ka6o3br3pb4fo) [![version](https://img.shields.io/badge/docs-brightgreen)](https://developer.tuya.com/en/docs/app-development/android-app-sdk/featureoverview?id=Ka69nt97vtsfu)
+[![CircleCI](https://circleci.com/gh/TuyaInc/tuyasmart_home_android_sdk/tree/master.svg?style=svg)](https://circleci.com/gh/TuyaInc/tuyasmart_home_android_sdk/tree/master)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![version](https://img.shields.io/badge/release-3.25.0-brightgreen)](https://developer.tuya.com/en/docs/app-development/android-app-sdk/change-log/changelog?id=Ka6o3br3pb4fo) [![version](https://img.shields.io/badge/docs-brightgreen)](https://developer.tuya.com/en/docs/app-development/android-app-sdk/featureoverview?id=Ka69nt97vtsfu)
 
 
 [中文版](README-zh.md)|[English](README.md)
