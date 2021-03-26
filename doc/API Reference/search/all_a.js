@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['name_61',['name',['../classcom_1_1tuya_1_1smart_1_1android_1_1ble_1_1api_1_1_config_error_bean.html#a88d95d62a24d59bc422f2702a3d0b36d',1,'com::tuya::smart::android::ble::api::ConfigErrorBean']]],
-  ['normal_62',['NORMAL',['../enumcom_1_1tuya_1_1smart_1_1android_1_1ble_1_1api_1_1_scan_type.html#ae07239e23c6fc77b5c9125df153f5766',1,'com.tuya.smart.android.ble.api.ScanType.NORMAL()'],['../enumcom_1_1tuya_1_1smart_1_1android_1_1ble_1_1builder_1_1_ble_connect_builder_1_1_level.html#a58a90b992dc165f77f6f196c8e405a5b',1,'com.tuya.smart.android.ble.builder.BleConnectBuilder.Level.NORMAL()']]],
-  ['notifynoneforscan_63',['notifyNoneForScan',['../interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_manager.html#aed93accaa351f676923f0058ce541acb',1,'com::tuya::smart::android::ble::ITuyaBleManager']]]
+  ['user_135',['User',['../classcom_1_1tuya_1_1smart_1_1android_1_1user_1_1bean_1_1_user.html',1,'com.tuya.smart.android.user.bean.User'],['../classcom_1_1tuya_1_1smart_1_1android_1_1user_1_1bean_1_1_user.html#af2da733afa3ba1a211b2f8407579ec96',1,'com.tuya.smart.android.user.bean.User.User()']]]
 ];

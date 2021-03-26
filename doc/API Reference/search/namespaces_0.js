@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['api_146',['api',['../namespacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1api.html',1,'com::tuya::smart::android::ble']]],
-  ['builder_147',['builder',['../namespacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1builder.html',1,'com::tuya::smart::android::ble']]]
+  ['api_158',['api',['../namespacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api.html',1,'com::tuya::smart::android::user']]],
+  ['bean_159',['bean',['../namespacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1bean.html',1,'com::tuya::smart::android::user']]]
 ];
