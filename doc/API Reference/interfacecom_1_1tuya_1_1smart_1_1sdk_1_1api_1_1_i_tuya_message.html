@@ -113,10 +113,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a340e948582599a8f184cdd612c8634ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_message.html#a340e948582599a8f184cdd612c8634ca">getMessageListByMsgSrcId</a> (int offset, int limit, <a class="el" href="enumcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1message_1_1_message_type.html">MessageType</a> msgType, String msgSrcId, boolean encryptImage, <a class="el" href="interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_data_callback.html">ITuyaDataCallback</a>&lt; <a class="el" href="classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1message_1_1_message_list_bean.html">MessageListBean</a> &gt; callback)</td></tr>
 <tr class="memdesc:a340e948582599a8f184cdd612c8634ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get feedback message list by message id.  <a href="interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_message.html#a340e948582599a8f184cdd612c8634ca">More...</a><br /></td></tr>
 <tr class="separator:a340e948582599a8f184cdd612c8634ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab809eff7a822c0153075274f38b0c97d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_message.html#ab809eff7a822c0153075274f38b0c97d">deleteMessages</a> (List&lt; String &gt; mIds, IBooleanCallback callback)</td></tr>
+<tr class="memitem:ab809eff7a822c0153075274f38b0c97d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_message.html#ab809eff7a822c0153075274f38b0c97d">deleteMessages</a> (List&lt; String &gt; mIds, <a class="el" href="interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_boolean_callback.html">IBooleanCallback</a> callback)</td></tr>
 <tr class="memdesc:ab809eff7a822c0153075274f38b0c97d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete message list.  <a href="interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_message.html#ab809eff7a822c0153075274f38b0c97d">More...</a><br /></td></tr>
 <tr class="separator:ab809eff7a822c0153075274f38b0c97d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6a63d1b10ff1c302474957d87e9ba22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_message.html#ae6a63d1b10ff1c302474957d87e9ba22">deleteMessageWithType</a> (int msgType, List&lt; String &gt; ids, List&lt; String &gt; msgSrcId, IBooleanCallback callback)</td></tr>
+<tr class="memitem:ae6a63d1b10ff1c302474957d87e9ba22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_message.html#ae6a63d1b10ff1c302474957d87e9ba22">deleteMessageWithType</a> (int msgType, List&lt; String &gt; ids, List&lt; String &gt; msgSrcId, <a class="el" href="interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_boolean_callback.html">IBooleanCallback</a> callback)</td></tr>
 <tr class="separator:ae6a63d1b10ff1c302474957d87e9ba22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a890b9a90837b3fb781fa0897502f007f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_message.html#a890b9a90837b3fb781fa0897502f007f">requestMessageNew</a> (<a class="el" href="interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_data_callback.html">ITuyaDataCallback</a>&lt; <a class="el" href="classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_message_has_new.html">MessageHasNew</a> &gt; callback)</td></tr>
 <tr class="separator:a890b9a90837b3fb781fa0897502f007f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -243,7 +243,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">IBooleanCallback&#160;</td>
+          <td class="paramtype"><a class="el" href="interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_boolean_callback.html">IBooleanCallback</a>&#160;</td>
           <td class="paramname"><em>callback</em>&#160;</td>
         </tr>
         <tr>
@@ -292,7 +292,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">IBooleanCallback&#160;</td>
+          <td class="paramtype"><a class="el" href="interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_boolean_callback.html">IBooleanCallback</a>&#160;</td>
           <td class="paramname"><em>callback</em>&#160;</td>
         </tr>
         <tr>

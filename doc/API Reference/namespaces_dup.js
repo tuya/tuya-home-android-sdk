@@ -19,13 +19,42 @@ var namespaces_dup =
               [ "callback", "namespacecom_1_1tuya_1_1smart_1_1android_1_1blemesh_1_1callback.html", "namespacecom_1_1tuya_1_1smart_1_1android_1_1blemesh_1_1callback" ],
               [ "ITuyaMeshService", "interfacecom_1_1tuya_1_1smart_1_1android_1_1blemesh_1_1_i_tuya_mesh_service.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1blemesh_1_1_i_tuya_mesh_service" ]
             ] ],
+            [ "camera", null, [
+              [ "api", null, [
+                [ "bean", "namespacecom_1_1tuya_1_1smart_1_1android_1_1camera_1_1api_1_1bean.html", "namespacecom_1_1tuya_1_1smart_1_1android_1_1camera_1_1api_1_1bean" ],
+                [ "ITuyaHomeCamera", "interfacecom_1_1tuya_1_1smart_1_1android_1_1camera_1_1api_1_1_i_tuya_home_camera.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1camera_1_1api_1_1_i_tuya_home_camera" ]
+              ] ]
+            ] ],
+            [ "config", null, [
+              [ "bean", "namespacecom_1_1tuya_1_1smart_1_1android_1_1config_1_1bean.html", "namespacecom_1_1tuya_1_1smart_1_1android_1_1config_1_1bean" ]
+            ] ],
             [ "device", null, [
               [ "api", "namespacecom_1_1tuya_1_1smart_1_1android_1_1device_1_1api.html", "namespacecom_1_1tuya_1_1smart_1_1android_1_1device_1_1api" ],
               [ "bean", "namespacecom_1_1tuya_1_1smart_1_1android_1_1device_1_1bean.html", "namespacecom_1_1tuya_1_1smart_1_1android_1_1device_1_1bean" ],
               [ "builder", "namespacecom_1_1tuya_1_1smart_1_1android_1_1device_1_1builder.html", "namespacecom_1_1tuya_1_1smart_1_1android_1_1device_1_1builder" ],
               [ "enums", "namespacecom_1_1tuya_1_1smart_1_1android_1_1device_1_1enums.html", "namespacecom_1_1tuya_1_1smart_1_1android_1_1device_1_1enums" ]
             ] ],
-            [ "mqtt", "namespacecom_1_1tuya_1_1smart_1_1android_1_1mqtt.html", "namespacecom_1_1tuya_1_1smart_1_1android_1_1mqtt" ]
+            [ "mqtt", "namespacecom_1_1tuya_1_1smart_1_1android_1_1mqtt.html", "namespacecom_1_1tuya_1_1smart_1_1android_1_1mqtt" ],
+            [ "push", null, [
+              [ "bean", null, [
+                [ "enums", "namespacecom_1_1tuya_1_1smart_1_1android_1_1push_1_1bean_1_1enums.html", "namespacecom_1_1tuya_1_1smart_1_1android_1_1push_1_1bean_1_1enums" ],
+                [ "PushAlarmBean", "classcom_1_1tuya_1_1smart_1_1android_1_1push_1_1bean_1_1_push_alarm_bean.html", "classcom_1_1tuya_1_1smart_1_1android_1_1push_1_1bean_1_1_push_alarm_bean" ],
+                [ "SecurityAlermBean", "classcom_1_1tuya_1_1smart_1_1android_1_1push_1_1bean_1_1_security_alerm_bean.html", "classcom_1_1tuya_1_1smart_1_1android_1_1push_1_1bean_1_1_security_alerm_bean" ]
+              ] ]
+            ] ],
+            [ "sweeper", null, [
+              [ "bean", "namespacecom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1bean.html", "namespacecom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1bean" ],
+              [ "ITuyaByteDataListener", "interfacecom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1_i_tuya_byte_data_listener.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1_i_tuya_byte_data_listener" ],
+              [ "ITuyaCloudConfigCallback", "interfacecom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1_i_tuya_cloud_config_callback.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1_i_tuya_cloud_config_callback" ],
+              [ "ITuyaDelHistoryCallback", "interfacecom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1_i_tuya_del_history_callback.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1_i_tuya_del_history_callback" ],
+              [ "ITuyaSweeper", "interfacecom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1_i_tuya_sweeper.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1_i_tuya_sweeper" ],
+              [ "ITuyaSweeperByteDataListener", "interfacecom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1_i_tuya_sweeper_byte_data_listener.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1_i_tuya_sweeper_byte_data_listener" ],
+              [ "ITuyaSweeperDataListener", "interfacecom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1_i_tuya_sweeper_data_listener.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1_i_tuya_sweeper_data_listener" ]
+            ] ],
+            [ "user", null, [
+              [ "api", "namespacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api.html", "namespacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api" ],
+              [ "bean", "namespacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1bean.html", "namespacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1bean" ]
+            ] ]
           ] ],
           [ "home", null, [
             [ "sdk", null, [
@@ -63,7 +92,9 @@ var namespaces_dup =
                 [ "IWarningMsgListener", "interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1api_1_1_i_warning_msg_listener.html", "interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1api_1_1_i_warning_msg_listener" ]
               ] ],
               [ "bean", "namespacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean.html", "namespacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean" ],
+              [ "builder", "namespacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder.html", "namespacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder" ],
               [ "callback", "namespacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1callback.html", "namespacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1callback" ],
+              [ "constant", "namespacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1constant.html", "namespacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1constant" ],
               [ "utils", "namespacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1utils.html", "namespacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1utils" ]
             ] ]
           ] ],

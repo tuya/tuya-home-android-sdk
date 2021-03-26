@@ -73,6 +73,19 @@ var annotated_dup =
               ] ],
               [ "ITuyaMeshService", "interfacecom_1_1tuya_1_1smart_1_1android_1_1blemesh_1_1_i_tuya_mesh_service.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1blemesh_1_1_i_tuya_mesh_service" ]
             ] ],
+            [ "camera", null, [
+              [ "api", null, [
+                [ "bean", "namespacecom_1_1tuya_1_1smart_1_1android_1_1camera_1_1api_1_1bean.html", [
+                  [ "CameraPushDataBean", "classcom_1_1tuya_1_1smart_1_1android_1_1camera_1_1api_1_1bean_1_1_camera_push_data_bean.html", "classcom_1_1tuya_1_1smart_1_1android_1_1camera_1_1api_1_1bean_1_1_camera_push_data_bean" ]
+                ] ],
+                [ "ITuyaHomeCamera", "interfacecom_1_1tuya_1_1smart_1_1android_1_1camera_1_1api_1_1_i_tuya_home_camera.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1camera_1_1api_1_1_i_tuya_home_camera" ]
+              ] ]
+            ] ],
+            [ "config", null, [
+              [ "bean", "namespacecom_1_1tuya_1_1smart_1_1android_1_1config_1_1bean.html", [
+                [ "ConfigErrorRespBean", "classcom_1_1tuya_1_1smart_1_1android_1_1config_1_1bean_1_1_config_error_resp_bean.html", "classcom_1_1tuya_1_1smart_1_1android_1_1config_1_1bean_1_1_config_error_resp_bean" ]
+              ] ]
+            ] ],
             [ "device", null, [
               [ "api", "namespacecom_1_1tuya_1_1smart_1_1android_1_1device_1_1api.html", [
                 [ "IGetDataPointStatCallback", "interfacecom_1_1tuya_1_1smart_1_1android_1_1device_1_1api_1_1_i_get_data_point_stat_callback.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1device_1_1api_1_1_i_get_data_point_stat_callback" ],
@@ -115,6 +128,60 @@ var annotated_dup =
               [ "ITuyaMqttChannel", "interfacecom_1_1tuya_1_1smart_1_1android_1_1mqtt_1_1_i_tuya_mqtt_channel.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1mqtt_1_1_i_tuya_mqtt_channel" ],
               [ "ITuyaMqttRetainChannelListener", "interfacecom_1_1tuya_1_1smart_1_1android_1_1mqtt_1_1_i_tuya_mqtt_retain_channel_listener.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1mqtt_1_1_i_tuya_mqtt_retain_channel_listener" ],
               [ "MqttMessageBean", "classcom_1_1tuya_1_1smart_1_1android_1_1mqtt_1_1_mqtt_message_bean.html", "classcom_1_1tuya_1_1smart_1_1android_1_1mqtt_1_1_mqtt_message_bean" ]
+            ] ],
+            [ "push", null, [
+              [ "bean", null, [
+                [ "enums", "namespacecom_1_1tuya_1_1smart_1_1android_1_1push_1_1bean_1_1enums.html", [
+                  [ "PushAlarmType", "enumcom_1_1tuya_1_1smart_1_1android_1_1push_1_1bean_1_1enums_1_1_push_alarm_type.html", "enumcom_1_1tuya_1_1smart_1_1android_1_1push_1_1bean_1_1enums_1_1_push_alarm_type" ]
+                ] ],
+                [ "PushAlarmBean", "classcom_1_1tuya_1_1smart_1_1android_1_1push_1_1bean_1_1_push_alarm_bean.html", "classcom_1_1tuya_1_1smart_1_1android_1_1push_1_1bean_1_1_push_alarm_bean" ],
+                [ "SecurityAlermBean", "classcom_1_1tuya_1_1smart_1_1android_1_1push_1_1bean_1_1_security_alerm_bean.html", "classcom_1_1tuya_1_1smart_1_1android_1_1push_1_1bean_1_1_security_alerm_bean" ]
+              ] ]
+            ] ],
+            [ "sweeper", null, [
+              [ "bean", "namespacecom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1bean.html", [
+                [ "CloudConfigBean", "classcom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1bean_1_1_cloud_config_bean.html", "classcom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1bean_1_1_cloud_config_bean" ],
+                [ "PathConfig", "classcom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1bean_1_1_path_config.html", "classcom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1bean_1_1_path_config" ],
+                [ "SweeperByteData", "classcom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1bean_1_1_sweeper_byte_data.html", "classcom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1bean_1_1_sweeper_byte_data" ],
+                [ "SweeperDataBean", "classcom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1bean_1_1_sweeper_data_bean.html", "classcom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1bean_1_1_sweeper_data_bean" ],
+                [ "SweeperHistory", "classcom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1bean_1_1_sweeper_history.html", "classcom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1bean_1_1_sweeper_history" ],
+                [ "SweeperHistoryBean", "classcom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1bean_1_1_sweeper_history_bean.html", "classcom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1bean_1_1_sweeper_history_bean" ],
+                [ "SweeperPathBean", "classcom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1bean_1_1_sweeper_path_bean.html", "classcom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1bean_1_1_sweeper_path_bean" ]
+              ] ],
+              [ "ITuyaByteDataListener", "interfacecom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1_i_tuya_byte_data_listener.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1_i_tuya_byte_data_listener" ],
+              [ "ITuyaCloudConfigCallback", "interfacecom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1_i_tuya_cloud_config_callback.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1_i_tuya_cloud_config_callback" ],
+              [ "ITuyaDelHistoryCallback", "interfacecom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1_i_tuya_del_history_callback.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1_i_tuya_del_history_callback" ],
+              [ "ITuyaSweeper", "interfacecom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1_i_tuya_sweeper.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1_i_tuya_sweeper" ],
+              [ "ITuyaSweeperByteDataListener", "interfacecom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1_i_tuya_sweeper_byte_data_listener.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1_i_tuya_sweeper_byte_data_listener" ],
+              [ "ITuyaSweeperDataListener", "interfacecom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1_i_tuya_sweeper_data_listener.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1sweeper_1_1_i_tuya_sweeper_data_listener" ]
+            ] ],
+            [ "user", null, [
+              [ "api", "namespacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api.html", [
+                [ "IBooleanCallback", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_boolean_callback.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_boolean_callback" ],
+                [ "ICheckAccountCallback", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_check_account_callback.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_check_account_callback" ],
+                [ "ICommonConfigCallback", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_common_config_callback.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_common_config_callback" ],
+                [ "IGetQRCodeTokenCallback", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_get_q_r_code_token_callback.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_get_q_r_code_token_callback" ],
+                [ "IGetQRDeviceInfoCallBack", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_get_q_r_device_info_call_back.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_get_q_r_device_info_call_back" ],
+                [ "IGetRegionCallback", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_get_region_callback.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_get_region_callback" ],
+                [ "ILoginCallback", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_login_callback.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_login_callback" ],
+                [ "ILogoutCallback", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_logout_callback.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_logout_callback" ],
+                [ "IQurryDomainCallback", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_qurry_domain_callback.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_qurry_domain_callback" ],
+                [ "IRegisterCallback", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_register_callback.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_register_callback" ],
+                [ "IReNickNameCallback", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_re_nick_name_callback.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_re_nick_name_callback" ],
+                [ "IResetPasswordCallback", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_reset_password_callback.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_reset_password_callback" ],
+                [ "IUidLoginCallback", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_uid_login_callback.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_uid_login_callback" ],
+                [ "IUserStorage", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_user_storage.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_user_storage" ],
+                [ "IValidateCallback", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_validate_callback.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_validate_callback" ],
+                [ "IWhiteListCallback", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_white_list_callback.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_white_list_callback" ]
+              ] ],
+              [ "bean", "namespacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1bean.html", [
+                [ "CommonConfigBean", "classcom_1_1tuya_1_1smart_1_1android_1_1user_1_1bean_1_1_common_config_bean.html", "classcom_1_1tuya_1_1smart_1_1android_1_1user_1_1bean_1_1_common_config_bean" ],
+                [ "Domain", "classcom_1_1tuya_1_1smart_1_1android_1_1user_1_1bean_1_1_domain.html", "classcom_1_1tuya_1_1smart_1_1android_1_1user_1_1bean_1_1_domain" ],
+                [ "QRDeviceInfoBean", "classcom_1_1tuya_1_1smart_1_1android_1_1user_1_1bean_1_1_q_r_device_info_bean.html", "classcom_1_1tuya_1_1smart_1_1android_1_1user_1_1bean_1_1_q_r_device_info_bean" ],
+                [ "Region", "classcom_1_1tuya_1_1smart_1_1android_1_1user_1_1bean_1_1_region.html", "classcom_1_1tuya_1_1smart_1_1android_1_1user_1_1bean_1_1_region" ],
+                [ "User", "classcom_1_1tuya_1_1smart_1_1android_1_1user_1_1bean_1_1_user.html", "classcom_1_1tuya_1_1smart_1_1android_1_1user_1_1bean_1_1_user" ],
+                [ "WhiteList", "classcom_1_1tuya_1_1smart_1_1android_1_1user_1_1bean_1_1_white_list.html", "classcom_1_1tuya_1_1smart_1_1android_1_1user_1_1bean_1_1_white_list" ]
+              ] ]
             ] ]
           ] ],
           [ "home", null, [
@@ -241,6 +308,16 @@ var annotated_dup =
                 [ "WarnMessageBean", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_warn_message_bean.html", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_warn_message_bean" ],
                 [ "WeatherBean", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_weather_bean.html", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_weather_bean" ]
               ] ],
+              [ "builder", "namespacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder.html", [
+                [ "ActivatorBuilder", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder_1_1_activator_builder.html", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder_1_1_activator_builder" ],
+                [ "GroupCreateBuilder", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder_1_1_group_create_builder.html", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder_1_1_group_create_builder" ],
+                [ "TuyaAutoConfigActivatorBuilder", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder_1_1_tuya_auto_config_activator_builder.html", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder_1_1_tuya_auto_config_activator_builder" ],
+                [ "TuyaCameraActivatorBuilder", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder_1_1_tuya_camera_activator_builder.html", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder_1_1_tuya_camera_activator_builder" ],
+                [ "TuyaGwActivatorBuilder", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder_1_1_tuya_gw_activator_builder.html", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder_1_1_tuya_gw_activator_builder" ],
+                [ "TuyaGwSubDevActivatorBuilder", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder_1_1_tuya_gw_sub_dev_activator_builder.html", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder_1_1_tuya_gw_sub_dev_activator_builder" ],
+                [ "TuyaLightningDevActivatorBuilder", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder_1_1_tuya_lightning_dev_activator_builder.html", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder_1_1_tuya_lightning_dev_activator_builder" ],
+                [ "TuyaQRCodeActivatorBuilder", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder_1_1_tuya_q_r_code_activator_builder.html", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder_1_1_tuya_q_r_code_activator_builder" ]
+              ] ],
               [ "callback", "namespacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1callback.html", [
                 [ "IGetHomeWetherCallBack", "interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1callback_1_1_i_get_home_wether_call_back.html", "interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1callback_1_1_i_get_home_wether_call_back" ],
                 [ "IIGetHomeWetherSketchCallBack", "interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1callback_1_1_i_i_get_home_wether_sketch_call_back.html", "interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1callback_1_1_i_i_get_home_wether_sketch_call_back" ],
@@ -256,6 +333,10 @@ var annotated_dup =
                 [ "ITuyaSingleTransfer", "interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1callback_1_1_i_tuya_single_transfer.html", "interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1callback_1_1_i_tuya_single_transfer" ],
                 [ "ITuyaTransferCallback", "interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1callback_1_1_i_tuya_transfer_callback.html", "interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1callback_1_1_i_tuya_transfer_callback" ],
                 [ "ITuyaVoiceTransfer", "interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1callback_1_1_i_tuya_voice_transfer.html", "interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1callback_1_1_i_tuya_voice_transfer" ]
+              ] ],
+              [ "constant", "namespacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1constant.html", [
+                [ "TimerTypeEnum", "enumcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1constant_1_1_timer_type_enum.html", "enumcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1constant_1_1_timer_type_enum" ],
+                [ "TimerUpdateEnum", "enumcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1constant_1_1_timer_update_enum.html", "enumcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1constant_1_1_timer_update_enum" ]
               ] ],
               [ "utils", "namespacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1utils.html", [
                 [ "SchemaMapper", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1utils_1_1_schema_mapper.html", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1utils_1_1_schema_mapper" ]

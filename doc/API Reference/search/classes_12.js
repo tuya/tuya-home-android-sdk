@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['valueproperty_2734',['ValueProperty',['../classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1scene_1_1condition_1_1property_1_1_value_property.html',1,'com::tuya::smart::home::sdk::bean::scene::condition::property']]],
-  ['valuerule_2735',['ValueRule',['../classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1scene_1_1condition_1_1rule_1_1_value_rule.html',1,'com::tuya::smart::home::sdk::bean::scene::condition::rule']]],
-  ['valueschemabean_2736',['ValueSchemaBean',['../classcom_1_1tuya_1_1smart_1_1android_1_1device_1_1bean_1_1_value_schema_bean.html',1,'com::tuya::smart::android::device::bean']]],
-  ['voicecommandbean_2737',['VoiceCommandBean',['../classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_voice_command_bean.html',1,'com::tuya::smart::home::sdk::bean']]]
+  ['uiinfo_3008',['UiInfo',['../classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_ui_info.html',1,'com::tuya::smart::sdk::bean']]],
+  ['universalbean_3009',['UniversalBean',['../classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_universal_bean.html',1,'com::tuya::smart::home::sdk::bean']]],
+  ['upgradeinfobean_3010',['UpgradeInfoBean',['../classcom_1_1tuya_1_1smart_1_1android_1_1device_1_1bean_1_1_upgrade_info_bean.html',1,'com::tuya::smart::android::device::bean']]],
+  ['upgradestatusenum_3011',['UpgradeStatusEnum',['../enumcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1callback_1_1_i_tuya_device_upgrade_status_callback_1_1_upgrade_status_enum.html',1,'com::tuya::smart::home::sdk::callback::ITuyaDeviceUpgradeStatusCallback']]],
+  ['user_3012',['User',['../classcom_1_1tuya_1_1smart_1_1android_1_1user_1_1bean_1_1_user.html',1,'com::tuya::smart::android::user::bean']]]
 ];
