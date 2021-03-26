@@ -1,6 +1,7 @@
 var namespacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder =
 [
     [ "ActivatorBuilder", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder_1_1_activator_builder.html", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder_1_1_activator_builder" ],
+    [ "GroupCreateBuilder", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder_1_1_group_create_builder.html", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder_1_1_group_create_builder" ],
     [ "TuyaAutoConfigActivatorBuilder", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder_1_1_tuya_auto_config_activator_builder.html", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder_1_1_tuya_auto_config_activator_builder" ],
     [ "TuyaCameraActivatorBuilder", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder_1_1_tuya_camera_activator_builder.html", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder_1_1_tuya_camera_activator_builder" ],
     [ "TuyaGwActivatorBuilder", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder_1_1_tuya_gw_activator_builder.html", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1builder_1_1_tuya_gw_activator_builder" ],

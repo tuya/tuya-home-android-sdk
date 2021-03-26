@@ -8,6 +8,7 @@ var classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean =
     [ "getDpCodes", "classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean.html#a643b2530c41cfbf3c00131e09d39542b", null ],
     [ "getDpName", "classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean.html#a18e6a1841ab326e8fe1c8a99da331527", null ],
     [ "getDps", "classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean.html#a88e2b6f870e832a0da06b995dae4f928", null ],
+    [ "getGroupKey", "classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean.html#a244da0997f88cc456d0bfff0f1d359c8", null ],
     [ "getHomeDisplayOrder", "classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean.html#a87610c287fc6eb2a0de1c14e6e244f49", null ],
     [ "getIconUrl", "classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean.html#a00a4569a467c751f4eceef9567b70980", null ],
     [ "getId", "classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean.html#a04a19f4171604527fc226672503436ac", null ],
@@ -30,6 +31,7 @@ var classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean =
     [ "setDpCodes", "classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean.html#a9739e671a877d6b465228dfca678e867", null ],
     [ "setDpName", "classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean.html#ae3f48304dc90104add8022c1831288ce", null ],
     [ "setDps", "classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean.html#a6046b7bf3ddc22f8b3deb5e44a64dc64", null ],
+    [ "setGroupKey", "classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean.html#a6ece56e75192de9c18e1bcd7148a1ef6", null ],
     [ "setHomeDisplayOrder", "classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean.html#a89fbfbb06ecf8db3efd0026deab49be6", null ],
     [ "setIconUrl", "classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean.html#a99428c711bba7a7b91241a3097a1932a", null ],
     [ "setId", "classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean.html#ae0929d7fe5bfcbabd965ab188225009f", null ],
@@ -44,7 +46,9 @@ var classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean =
     [ "setStandard", "classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean.html#ac37eeac8031024f578d3a35ae6313fed", null ],
     [ "setTime", "classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean.html#a4d16a97bcfc8c1c5a3ef473f8b97d440", null ],
     [ "setType", "classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean.html#ae682c34e15613c264d7e3d51ca3331a7", null ],
+    [ "TYPE_BEACON", "classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean.html#a924d339f1dbac9bc0404f9170d3373da", null ],
     [ "TYPE_BLE_MESH", "classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean.html#a897c265b95227235b3bc189802af6ee4", null ],
+    [ "TYPE_SIG_MESH", "classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean.html#ae313f57aa94026c0e801a907839ab1bb", null ],
     [ "TYPE_WIFI", "classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean.html#a71bd69aad344f7006b05aaf642a88ea9", null ],
     [ "TYPE_ZIGBEE", "classcom_1_1tuya_1_1smart_1_1sdk_1_1bean_1_1_group_bean.html#aa525941e695883f8d9c5091fde5d003a", null ]
 ];

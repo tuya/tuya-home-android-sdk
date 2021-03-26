@@ -11,6 +11,7 @@ var namespacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1bluemesh =
     [ "IGroupDevCallback", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1bluemesh_1_1_i_group_dev_callback.html", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1bluemesh_1_1_i_group_dev_callback" ],
     [ "IMeshDeviceListener", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1bluemesh_1_1_i_mesh_device_listener.html", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1bluemesh_1_1_i_mesh_device_listener" ],
     [ "IMeshDevListener", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1bluemesh_1_1_i_mesh_dev_listener.html", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1bluemesh_1_1_i_mesh_dev_listener" ],
+    [ "IMeshDevListenerV2", "classcom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1bluemesh_1_1_i_mesh_dev_listener_v2.html", "classcom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1bluemesh_1_1_i_mesh_dev_listener_v2" ],
     [ "IMeshStatusListener", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1bluemesh_1_1_i_mesh_status_listener.html", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1bluemesh_1_1_i_mesh_status_listener" ],
     [ "IRequestMeshListCallback", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1bluemesh_1_1_i_request_mesh_list_callback.html", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1bluemesh_1_1_i_request_mesh_list_callback" ],
     [ "IRequestSigMeshListCallback", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1bluemesh_1_1_i_request_sig_mesh_list_callback.html", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1bluemesh_1_1_i_request_sig_mesh_list_callback" ],

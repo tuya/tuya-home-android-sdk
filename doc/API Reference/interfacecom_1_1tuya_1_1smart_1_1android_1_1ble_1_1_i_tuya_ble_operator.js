@@ -10,10 +10,12 @@ var interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_operator =
     [ "openBluetooth", "interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_operator.html#aad84114b0df071a5f5776524ddbbcfbc", null ],
     [ "readBluetoothRssi", "interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_operator.html#a2550912bf5d7f500a9d9e8bb30da81e3", null ],
     [ "registerBleConnectStatus", "interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_operator.html#a374dcaab5fb8118cb1b409d9a49615a4", null ],
+    [ "registerBluetoothStateListener", "interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_operator.html#a0077a2de5b6e5f6c9f54aa0e8963c058", null ],
     [ "startLeScan", "interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_operator.html#a4343f8c377a10e85f0459df936085eb5", null ],
     [ "startLeScan", "interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_operator.html#a07dfffdfc1bc50895f5ba3bfafb7fd9e", null ],
     [ "startScan", "interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_operator.html#a30b0b652d89a087b350eac559e1951aa", null ],
     [ "stopLeScan", "interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_operator.html#a8650928d632daff98d3358315a913f03", null ],
     [ "stopScan", "interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_operator.html#ab67835d67da8c6cd4a4879b0f1b4f8e6", null ],
-    [ "unregisterBleConnectStatus", "interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_operator.html#a09dd91a4361520593c392fbc986e10b5", null ]
+    [ "unregisterBleConnectStatus", "interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_operator.html#a09dd91a4361520593c392fbc986e10b5", null ],
+    [ "unregisterBluetoothStateListener", "interfacecom_1_1tuya_1_1smart_1_1android_1_1ble_1_1_i_tuya_ble_operator.html#afab887b8cd8b1ca422f439c5ae591434", null ]
 ];

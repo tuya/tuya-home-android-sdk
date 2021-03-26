@@ -17,6 +17,7 @@ var interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1api_1_1_i_tuya_home_member =
     [ "removeMember", "interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1api_1_1_i_tuya_home_member.html#a7fb62875256a6cffefc3a4000f3857d6", null ],
     [ "saveAuthRoomList", "interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1api_1_1_i_tuya_home_member.html#af171b41aab03bc57f84134d6790b0470", null ],
     [ "saveAuthSceneList", "interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1api_1_1_i_tuya_home_member.html#abb471a8583899baf0e493675a1eaf4d3", null ],
+    [ "updateInvitedMember", "interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1api_1_1_i_tuya_home_member.html#a471d5c0662ce6ac3993da3917a6e2b09", null ],
     [ "updateMember", "interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1api_1_1_i_tuya_home_member.html#a7017897ffc49e3a03d1f929a0481b54d", null ],
     [ "updateMember", "interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1api_1_1_i_tuya_home_member.html#a34138ea67633e120aed9d8cb514a3e48", null ],
     [ "updateMemberRole", "interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1api_1_1_i_tuya_home_member.html#a958b261ba7e1e252eff1f9217bc2eaa6", null ],

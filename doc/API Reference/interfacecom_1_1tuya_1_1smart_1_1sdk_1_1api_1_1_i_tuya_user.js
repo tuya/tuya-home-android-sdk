@@ -1,6 +1,8 @@
 var interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user =
 [
+    [ "bindEmail", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#ab601b54db161239c4cbe02c8cef5c703", null ],
     [ "bindMobile", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#abde2f90c4f35d76550a092a90285cbe7", null ],
+    [ "bindMobileSendCodeForVas", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#a5cff6105d320cdf36dc8cc9cb7e483b2", null ],
     [ "cancelAccount", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#ac5d3e86123d4a5d8238553a65a8f41e1", null ],
     [ "checkCodeWithUserName", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#a1e8d77a1596987d5e70d4069a7ec5cfd", null ],
     [ "checkEmailPassword", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#acdce37fe767bcf66d7eb2303b5658e1c", null ],
@@ -13,7 +15,7 @@ var interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user =
     [ "getRegionListWithCountryCode", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#a1b06186c710d89c100b0e67ce665ca93", null ],
     [ "getRegisterEmailValidateCode", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#ab184e9cd7d2d7e0168210d8830accef9", null ],
     [ "getUser", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#aae18ab3723d124a45b4314f372c1e367", null ],
-    [ "getValidateCode", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#a458581288a466e5d85fcded92181262d", null ],
+    [ "getWhiteListWhoCanSendMobileCodeSuccess", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#ad2057dd781d7c57d1372f501dca30be7", null ],
     [ "isLogin", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#ad9368317d1558239ba9c35cfe2dc296b", null ],
     [ "loginByFacebook", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#ad312cd4eee03fbc8e482c2d3e4757d0d", null ],
     [ "loginByQQ", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#a7bbc23d92e028615b8ed06c54da5e07e", null ],
@@ -45,6 +47,7 @@ var interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user =
     [ "resetPhonePassword", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#adf52396bfc56ab75a8fcfd5d86cf229f", null ],
     [ "saveUser", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#a38407ee6c166dd32e24d70d20f425b65", null ],
     [ "sendBindVerifyCode", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#a3ca334f4da188fa21734e7e22f429481", null ],
+    [ "sendBindVerifyCodeWithEmail", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#ad61764f362ae2fe97443d16438cc720b", null ],
     [ "sendVerifyCodeWithUserName", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#a9439d8d8fc98ecbc9b06bf9ae9936a43", null ],
     [ "setTempUnit", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#ac7ce912a932085a8798c2e1dc7580922", null ],
     [ "switchUserRegion", "interfacecom_1_1tuya_1_1smart_1_1sdk_1_1api_1_1_i_tuya_user.html#add5353ec3f7d3328a92afb014a427da5", null ],

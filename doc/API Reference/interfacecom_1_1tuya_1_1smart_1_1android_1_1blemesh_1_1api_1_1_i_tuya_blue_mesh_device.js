@@ -7,5 +7,6 @@ var interfacecom_1_1tuya_1_1smart_1_1android_1_1blemesh_1_1api_1_1_i_tuya_blue_m
     [ "querySubDevStatusByLocal", "interfacecom_1_1tuya_1_1smart_1_1android_1_1blemesh_1_1api_1_1_i_tuya_blue_mesh_device.html#add111574896b46b9d2940b70e8e96a07", null ],
     [ "registerMeshDevListener", "interfacecom_1_1tuya_1_1smart_1_1android_1_1blemesh_1_1api_1_1_i_tuya_blue_mesh_device.html#a54118d825d0e57e3b7cf015042a24e91", null ],
     [ "registerMeshDevListener", "interfacecom_1_1tuya_1_1smart_1_1android_1_1blemesh_1_1api_1_1_i_tuya_blue_mesh_device.html#ac6a064f921605a73a831dde9540a3a68", null ],
+    [ "registerMeshDevListenerV2", "interfacecom_1_1tuya_1_1smart_1_1android_1_1blemesh_1_1api_1_1_i_tuya_blue_mesh_device.html#a9ecab02b110de2f5e26abdf1a37283f7", null ],
     [ "unRegisterMeshDevListener", "interfacecom_1_1tuya_1_1smart_1_1android_1_1blemesh_1_1api_1_1_i_tuya_blue_mesh_device.html#a6fd6607831432cdfcf0c0c14f5efb015", null ]
 ];

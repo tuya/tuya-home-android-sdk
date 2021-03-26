@@ -1,6 +1,7 @@
 var namespacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean =
 [
     [ "scene", "namespacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1scene.html", "namespacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1scene" ],
+    [ "ActiveDmDeviceBean", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_active_dm_device_bean.html", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_active_dm_device_bean" ],
     [ "ConfigProductInfoBean", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_config_product_info_bean.html", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_config_product_info_bean" ],
     [ "DashBoardBean", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_dash_board_bean.html", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_dash_board_bean" ],
     [ "DeviceAndGroupInHomeBean", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_device_and_group_in_home_bean.html", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_device_and_group_in_home_bean" ],
@@ -8,6 +9,7 @@ var namespacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean =
     [ "DeviceBizPropBean", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_device_biz_prop_bean.html", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_device_biz_prop_bean" ],
     [ "DeviceShareBean", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_device_share_bean.html", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_device_share_bean" ],
     [ "DeviceType", "enumcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_device_type.html", "enumcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_device_type" ],
+    [ "EnvBean", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_env_bean.html", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_env_bean" ],
     [ "HomeBean", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_home_bean.html", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_home_bean" ],
     [ "LightningSearchBean", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_lightning_search_bean.html", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_lightning_search_bean" ],
     [ "MemberBean", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_member_bean.html", "classcom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1bean_1_1_member_bean" ],

@@ -14,5 +14,6 @@ var namespacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api =
     [ "IResetPasswordCallback", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_reset_password_callback.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_reset_password_callback" ],
     [ "IUidLoginCallback", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_uid_login_callback.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_uid_login_callback" ],
     [ "IUserStorage", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_user_storage.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_user_storage" ],
-    [ "IValidateCallback", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_validate_callback.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_validate_callback" ]
+    [ "IValidateCallback", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_validate_callback.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_validate_callback" ],
+    [ "IWhiteListCallback", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_white_list_callback.html", "interfacecom_1_1tuya_1_1smart_1_1android_1_1user_1_1api_1_1_i_white_list_callback" ]
 ];

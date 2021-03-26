@@ -3,6 +3,7 @@ var interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1api_1_1_i_tuya_home =
     [ "addRoom", "interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1api_1_1_i_tuya_home.html#a36e56e26ffb8710fd22e0ee7e85bb78e", null ],
     [ "bindNewConfigDevs", "interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1api_1_1_i_tuya_home.html#a364310d385e7f78f1b49383e32c9852a", null ],
     [ "createBlueMesh", "interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1api_1_1_i_tuya_home.html#ab0aefd5011570bcac08671edf8be6a70", null ],
+    [ "createCommonGroup", "interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1api_1_1_i_tuya_home.html#aac192872bbcc6b4b168604e2511bb660", null ],
     [ "createGroup", "interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1api_1_1_i_tuya_home.html#a510bffc9ac92138500530ef80dae05f0", null ],
     [ "createSigMesh", "interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1api_1_1_i_tuya_home.html#ac5be1afdad70770db27a2339da762135", null ],
     [ "createZigbeeGroup", "interfacecom_1_1tuya_1_1smart_1_1home_1_1sdk_1_1api_1_1_i_tuya_home.html#af8bccbfb901f48b4e0b46f97c43bca13", null ],
